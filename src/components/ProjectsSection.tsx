@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { Smartphone, Play } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -10,8 +10,8 @@ const ProjectsSection = () => {
       description: "A full-featured e-commerce application with user authentication, product catalog, shopping cart, and payment integration using Stripe.",
       technologies: ["Flutter", "Firebase", "Stripe", "Provider", "REST API"],
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      appStoreUrl: "https://apps.apple.com/app/id123456789",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.ecommerce",
       features: ["User Authentication", "Shopping Cart", "Payment Gateway", "Order Tracking"]
     },
     {
@@ -19,8 +19,8 @@ const ProjectsSection = () => {
       description: "A comprehensive social media management app with analytics, post scheduling, and multi-platform integration.",
       technologies: ["Flutter", "GraphQL", "BLoC", "Hive", "Push Notifications"],
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      appStoreUrl: "https://apps.apple.com/app/id123456790",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.socialmedia",
       features: ["Analytics Dashboard", "Post Scheduling", "Real-time Updates", "Multi-platform"]
     },
     {
@@ -28,8 +28,8 @@ const ProjectsSection = () => {
       description: "A comprehensive fitness app with workout tracking, nutrition logging, progress analytics, and social features.",
       technologies: ["Flutter", "SQLite", "Charts", "Camera", "Health APIs"],
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      appStoreUrl: "https://apps.apple.com/app/id123456791",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.fitness",
       features: ["Workout Tracking", "Nutrition Logging", "Progress Charts", "Social Features"]
     },
     {
@@ -37,8 +37,8 @@ const ProjectsSection = () => {
       description: "An intuitive travel planning application with itinerary management, expense tracking, and offline maps integration.",
       technologies: ["Flutter", "Google Maps", "Local Storage", "API Integration"],
       image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      appStoreUrl: "https://apps.apple.com/app/id123456792",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.travel",
       features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     }
   ];
@@ -93,13 +93,22 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="gap-2 flex-1">
-                    <Github className="w-4 h-4" />
-                    Code
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="gap-2 flex-1"
+                    onClick={() => window.open(project.appStoreUrl, '_blank')}
+                  >
+                    <Smartphone className="w-4 h-4" />
+                    App Store
                   </Button>
-                  <Button size="sm" className="gap-2 flex-1">
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
+                  <Button 
+                    size="sm" 
+                    className="gap-2 flex-1"
+                    onClick={() => window.open(project.playStoreUrl, '_blank')}
+                  >
+                    <Play className="w-4 h-4" />
+                    Google Play
                   </Button>
                 </div>
               </CardContent>
@@ -109,8 +118,8 @@ const ProjectsSection = () => {
 
         <div className="text-center mt-12">
           <Button variant="outline" className="gap-2">
-            <Github className="w-4 h-4" />
-            View All Projects on GitHub
+            <Smartphone className="w-4 h-4" />
+            View All Apps on Store
           </Button>
         </div>
       </div>
