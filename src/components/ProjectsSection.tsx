@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Smartphone, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const ProjectsSection = () => {
+  const { t } = useTranslation();
+  
   const projects = [
     {
       id: "ecommerce",
@@ -53,10 +56,10 @@ const ProjectsSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Featured Projects
+            {t('projects.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent Flutter applications and mobile development work
+            {t('projects.description')}
           </p>
         </div>
 
@@ -108,7 +111,7 @@ const ProjectsSection = () => {
                       }}
                     >
                       <Smartphone className="w-4 h-4" />
-                      App Store
+                      {t('projects.appStore')}
                     </Button>
                     <Button 
                       size="sm" 
@@ -119,7 +122,7 @@ const ProjectsSection = () => {
                       }}
                     >
                       <Play className="w-4 h-4" />
-                      Google Play
+                      {t('projects.googlePlay')}
                     </Button>
                   </div>
                 </CardContent>

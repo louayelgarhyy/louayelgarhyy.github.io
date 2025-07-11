@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Smartphone, Play, Star, Download, Users } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
+  const { t } = useTranslation();
 
   // Project data - in a real app, this would come from an API or context
   const projects = {
@@ -153,7 +155,7 @@ const ProjectDetail = () => {
           <Link to="/">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="w-4 h-4" />
-              Back to Portfolio
+              {t('projectDetail.backToProjects')}
             </Button>
           </Link>
         </div>
@@ -176,21 +178,21 @@ const ProjectDetail = () => {
                 <Download className="w-4 h-4 text-primary" />
                 <span className="font-bold text-lg">{project.stats.downloads}</span>
               </div>
-              <span className="text-sm text-muted-foreground">Downloads</span>
+              <span className="text-sm text-muted-foreground">{t('projectDetail.stats.downloads')}</span>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <Star className="w-4 h-4 text-yellow-500" />
                 <span className="font-bold text-lg">{project.stats.rating}</span>
               </div>
-              <span className="text-sm text-muted-foreground">Rating</span>
+              <span className="text-sm text-muted-foreground">{t('projectDetail.stats.rating')}</span>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <Users className="w-4 h-4 text-accent" />
                 <span className="font-bold text-lg">{project.stats.reviews}</span>
               </div>
-              <span className="text-sm text-muted-foreground">Reviews</span>
+              <span className="text-sm text-muted-foreground">{t('projectDetail.stats.reviews')}</span>
             </div>
           </div>
 
@@ -201,7 +203,7 @@ const ProjectDetail = () => {
               onClick={() => window.open(project.appStoreUrl, '_blank')}
             >
               <Smartphone className="w-4 h-4" />
-              Download on App Store
+              {t('projectDetail.appStore')}
             </Button>
             <Button 
               variant="outline" 
@@ -209,14 +211,14 @@ const ProjectDetail = () => {
               onClick={() => window.open(project.playStoreUrl, '_blank')}
             >
               <Play className="w-4 h-4" />
-              Get it on Google Play
+              {t('projectDetail.googlePlay')}
             </Button>
           </div>
         </div>
 
         {/* Screenshots Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8 text-foreground">Screenshots</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-foreground">{t('projectDetail.screenshots')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {project.screenshots.map((screenshot, index) => (
               <Card 
@@ -241,7 +243,7 @@ const ProjectDetail = () => {
           {/* Description */}
           <Card className="bg-card-gradient border-border/50 shadow-elegant animate-fade-in">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-card-foreground mb-4">About This App</h3>
+              <h3 className="text-2xl font-bold text-card-foreground mb-4">{t('projectDetail.overview')}</h3>
               <p className="text-muted-foreground leading-relaxed">
                 {project.longDescription}
               </p>
@@ -251,7 +253,7 @@ const ProjectDetail = () => {
           {/* Features */}
           <Card className="bg-card-gradient border-border/50 shadow-elegant animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-card-foreground mb-4">Key Features</h3>
+              <h3 className="text-2xl font-bold text-card-foreground mb-4">{t('projectDetail.features')}</h3>
               <div className="grid grid-cols-1 gap-3">
                 {project.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">

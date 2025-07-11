@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -16,14 +20,21 @@ const HeroSection = () => {
       <div className="absolute bottom-20 right-10 w-16 h-16 border border-accent/20 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-1/2 right-20 w-12 h-12 border border-primary/30 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
       
-      <div className="container mx-auto px-6 text-center z-10">
+      <div className="container mx-auto px-6 text-center z-10 relative">
+        <div className="absolute top-6 right-6">
+          <LanguageSwitcher />
+        </div>
+        
         <div className="animate-fade-in">
+          <p className="text-lg text-muted-foreground mb-4">{t('hero.greeting')}</p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Flutter Developer
+            {t('hero.name')}
           </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+            {t('hero.title')}
+          </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Crafting beautiful, high-performance mobile applications with Flutter. 
-            Passionate about creating seamless user experiences across iOS and Android.
+            {t('hero.description')}
           </p>
           
           {/* Social links */}
@@ -43,7 +54,7 @@ const HeroSection = () => {
           </div>
 
           <Button onClick={scrollToProjects} className="gap-2 shadow-glow-primary hover:shadow-glow-accent transition-all duration-300">
-            View My Work
+            {t('hero.viewWork')}
             <ArrowDown className="w-4 h-4 animate-bounce" />
           </Button>
         </div>

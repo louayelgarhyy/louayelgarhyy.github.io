@@ -1,24 +1,31 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from 'react-i18next';
 
 const SkillsSection = () => {
+  const { t } = useTranslation();
+  
   const skillCategories = [
     {
+      key: "mobile",
       title: "Mobile Development",
       skills: ["Flutter", "Dart", "iOS Development", "Android Development", "Cross-platform"],
       icon: "📱"
     },
     {
+      key: "frontend",
       title: "Frontend & UI",
       skills: ["Material Design", "Cupertino Design", "Custom Animations", "Responsive Design", "State Management"],
       icon: "🎨"
     },
     {
+      key: "backend",
       title: "Backend & APIs",
       skills: ["Firebase", "REST APIs", "GraphQL", "SQLite", "Cloud Functions"],
       icon: "⚡"
     },
     {
+      key: "tools",
       title: "Tools & Others",
       skills: ["Git", "VS Code", "Android Studio", "Xcode", "CI/CD", "App Store Publishing"],
       icon: "🛠️"
@@ -30,10 +37,10 @@ const SkillsSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Skills & Expertise
+            {t('skills.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I use to build amazing mobile applications
+            {t('skills.description')}
           </p>
         </div>
 
@@ -47,7 +54,7 @@ const SkillsSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-2xl">{category.icon}</span>
-                  <h3 className="text-xl font-semibold text-card-foreground">{category.title}</h3>
+                  <h3 className="text-xl font-semibold text-card-foreground">{t(`skills.categories.${category.key}`) || category.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (

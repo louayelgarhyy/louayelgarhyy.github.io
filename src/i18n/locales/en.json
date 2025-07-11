@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Alex Johnson",
+    "title": "Flutter Developer",
+    "description": "I create beautiful, high-performance mobile applications that deliver exceptional user experiences across iOS and Android platforms.",
+    "viewWork": "View My Work"
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "description": "Technologies and tools I use to build amazing mobile applications",
+    "categories": {
+      "mobile": "Mobile Development",
+      "frontend": "Frontend & UI",
+      "backend": "Backend & APIs",
+      "tools": "Tools & Others"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "A showcase of my mobile applications and their impact",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "viewDetails": "View Details"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Ready to bring your mobile app idea to life? Let's discuss your project.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "I specialize in creating high-quality Flutter applications that work seamlessly across platforms. Let's discuss how I can help bring your vision to life.",
+      "sendMessage": "Send Message",
+      "downloadResume": "Download Resume"
+    }
+  },
+  "projectDetail": {
+    "backToProjects": "← Back to Projects",
+    "overview": "Overview",
+    "features": "Key Features",
+    "screenshots": "Screenshots",
+    "appStore": "Download on App Store",
+    "googlePlay": "Get it on Google Play",
+    "stats": {
+      "downloads": "Downloads",
+      "rating": "Rating",
+      "reviews": "Reviews"
+    }
+  }
+}
