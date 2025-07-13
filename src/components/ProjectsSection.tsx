@@ -7,17 +7,32 @@ import { useTranslation } from 'react-i18next';
 
 const ProjectsSection = () => {
   const { t } = useTranslation();
-  
+
   const projects = [
     {
-      id: "ecommerce",
-      title: "E-Commerce Mobile App",
-      description: "A full-featured e-commerce application with user authentication, product catalog, shopping cart, and payment integration using Stripe.",
-      technologies: ["Flutter", "Firebase", "Stripe", "Provider", "REST API"],
+      id: "1",
+      title: "Bazar - بازار",
+      description: "A feature-rich multi-vendor marketplace app with a modern UI and advanced social commerce features. Bazar combines traditional e-commerce with interactive content like reels to enhance user engagement.",
+      technologies: ["Flutter", "Firebase",  "Clean Architecture", "Provider","REST API", "Laravel", "HTML", "CSS", "JavaScript", "PHP","CloudFlare"],
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
       appStoreUrl: "https://apps.apple.com/app/id123456789",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.ecommerce",
-      features: ["User Authentication", "Shopping Cart", "Payment Gateway", "Order Tracking"]
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar",
+      features: [
+        "User & Vendor Authentication",
+        "Multi-Vendor Marketplace",
+        "Product Browsing & Search",
+        "Shopping Cart & Order Placement",
+        "Real-time Push Notifications",
+        "Ratings & Reviews System",
+        "Follow Vendors & Users",
+        "Like Products & Reels",
+        "Reels with Videos & Photos",
+        "Interactive Social Feed",
+        "Vendor Profiles",
+        "Order History",
+        "Secure RESTful API Integration",
+        "Cloudflare Optimization"
+      ]
     },
     {
       id: "social",
@@ -66,23 +81,23 @@ const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Link key={project.title} to={`/project/${project.id}`}>
-              <Card 
+              <Card
                 className="bg-card-gradient border-border/50 shadow-elegant hover:shadow-glow-accent transition-all duration-300 group animate-fade-in overflow-hidden cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
                 </div>
-                
+
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-card-foreground mb-3">{project.title}</h3>
                   <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="outline" className="text-xs">
@@ -101,9 +116,9 @@ const ProjectsSection = () => {
                   </div>
 
                   <div className="flex gap-3" onClick={(e) => e.stopPropagation()}>
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       className="gap-2 flex-1"
                       onClick={(e) => {
                         e.preventDefault();
@@ -113,8 +128,8 @@ const ProjectsSection = () => {
                       <Smartphone className="w-4 h-4" />
                       {t('projects.appStore')}
                     </Button>
-                    <Button 
-                      size="sm" 
+                    <Button
+                      size="sm"
                       className="gap-2 flex-1"
                       onClick={(e) => {
                         e.preventDefault();

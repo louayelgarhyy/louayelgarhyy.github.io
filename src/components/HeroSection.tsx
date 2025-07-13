@@ -39,10 +39,10 @@ const HeroSection = () => {
           
           {/* Social links */}
           <div className="flex justify-center gap-4 mb-8">
-            <Button variant="outline" size="sm" className="gap-2">
+            {/* <Button variant="outline" size="sm" className="gap-2">
               <Github className="w-4 h-4" />
               GitHub
-            </Button>
+            </Button> */}
             <Button variant="outline" size="sm" className="gap-2">
               <Linkedin className="w-4 h-4" />
               LinkedIn

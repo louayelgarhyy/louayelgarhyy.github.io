@@ -15,13 +15,13 @@ const SkillsSection = () => {
     {
       key: "frontend",
       title: "Frontend & UI",
-      skills: ["Material Design", "Cupertino Design", "Custom Animations", "Responsive Design", "State Management"],
+      skills: ["Figma","Adobe XD","Material Design", "Cupertino Design", "Custom Animations", "Responsive Design","HTML", "CSS", "JavaScript"],
       icon: "🎨"
     },
     {
       key: "backend",
       title: "Backend & APIs",
-      skills: ["Firebase", "REST APIs", "GraphQL", "SQLite", "Cloud Functions"],
+      skills: ["Larave","PHP","Firebase","SQL","PhpMyAdmin", "REST APIs", "GraphQL", "SQLite", "Cloud Functions"],
       icon: "⚡"
     },
     {
