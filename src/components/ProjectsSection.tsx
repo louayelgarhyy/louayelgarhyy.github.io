@@ -86,7 +86,7 @@ const ProjectsSection = () => {
       id: "5",
       title: "Mazij - مزيج",
       description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
-      technologies: ["Flutter", "Google Maps","API Integration","Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
       image: "/images/daffa/logo.png",
       appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.mazij.app&hl=en",
@@ -97,49 +97,58 @@ const ProjectsSection = () => {
       id: "6",
       title: "Sarfha - صرّفها",
       description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
-      technologies: ["Flutter", "Google Maps","API Integration","Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
       image: "/images/daffa/logo.png",
       appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.mazij.app&hl=en",
       websiteUrl: null,
       features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
+
     {
       id: "7",
       title: "دعاية بلس أعمال",
       date: "Aug 13, 2024",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.dieayaplus.market&hl=en"
-    },
-    {
-      id: "8",
-      title: "Bazar - بازار",
-      date: "Oct 1, 2024",
-      downloads: "+100K downloads",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar"
-    },
-    {
-      id: "9",
-      title: "متاجر بازار",
-      date: "Oct 1, 2024",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.dieayaplus.market&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "10",
       title: "Taivay",
       date: "Oct 18, 2024",
-      appStoreUrl: "https://apps.apple.com/us/app/%D8%AA%D9%8A%D9%81%D8%A7%D9%8A/id6739472701"
+      appStoreUrl: "https://apps.apple.com/us/app/%D8%AA%D9%8A%D9%81%D8%A7%D9%8A/id6739472701",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "11",
       title: "معك",
       date: "Oct 19, 2024",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.maak.sa"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.maak.sa",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "12",
       title: "Cool Car - كول كار",
       date: "Nov 8, 2024",
-      appStoreUrl: "https://apps.apple.com/ae/app/cool-car-%D9%83%D9%88%D9%84-%D9%83%D8%A7%D8%B1/id6737987479?platform=iphone",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"],
+      appStoreUrl: "https://apps.apple.com/ae/app/id6737987479?platform=iphone",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.cool.car.sa",
       websiteUrl: "coolcar.com.sa",
       figmaUrl: "https://www.figma.com/design/9w8a1dBELXpirfDLeIsJ2N/Buy-your-dream-car-(Community)?node-id=0-1&p=f&t=gD2G5wGzEZGldjmK-0"
@@ -149,61 +158,120 @@ const ProjectsSection = () => {
       title: "دليل وجهتك",
       date: "Nov 19, 2024",
       appStoreUrl: "https://apps.apple.com/kw/app/%D8%AF%D9%84%D9%8A%D9%84-%D9%88%D8%AC%D9%87%D8%AA%D9%83/id6738397663?platform=iphone",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.dalilwejhtak"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.dalilwejhtak",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "14",
       title: "Damin",
       date: "Jan 20, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.damin.sa&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.damin.sa&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "15",
       title: "Tissue wishen - مناديل واشن",
       date: "Feb 1, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.tissue&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.tissue&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "16",
       title: "Heaven Valley",
       date: "Feb 11, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_vally&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_vally&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "17",
       title: "Heaven Valley Admin",
       date: "Feb 13, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_admin&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_admin&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "18",
       title: "Noot",
       date: "Mar 4, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.noot&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.noot&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "19",
       title: "Noot Owner",
       date: "Mar 4, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.noot_owner&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.noot_owner&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "20",
       title: "ROZ - روز",
       date: "Mar 13, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.roz.sa"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.roz.sa",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "21",
       title: "Breeze - بريز",
       date: "Apr 12, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.breeze.sa&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.breeze.sa&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     },
     {
       id: "22",
       title: "Breeze Admin",
       date: "Apr 12, 2025",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.breeze_delivery&hl=en"
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.breeze_delivery&hl=en",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps", "API Integration", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
     }
 
   ];
@@ -259,18 +327,18 @@ const ProjectsSection = () => {
 
                   <div className="flex gap-3" onClick={(e) => e.stopPropagation()}>
                     {project.appStoreUrl && (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="gap-2 flex-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(project.appStoreUrl, '_blank');
-                      }}
-                    >
-                      <i className="ri-apple-fill"></i>
-                      {t('projects.appStore')}
-                    </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="gap-2 flex-1"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(project.appStoreUrl, '_blank');
+                        }}
+                      >
+                        <i className="ri-apple-fill"></i>
+                        {t('projects.appStore')}
+                      </Button>
                     )}
                     {project.playStoreUrl && (
                       <Button
