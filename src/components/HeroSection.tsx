@@ -1,62 +1,73 @@
-import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { Button } from './ui/button';
+import { ArrowDown, Download, MessageCircle } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const HeroSection = () => {
   const { t } = useTranslation();
-  
+
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-hero-gradient opacity-10"></div>
-      
-      {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 border border-primary/20 rounded-lg animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-16 h-16 border border-accent/20 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 right-20 w-12 h-12 border border-primary/30 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-      
-      <div className="container mx-auto px-6 text-center z-10 relative">
-        <div className="absolute top-6 right-6">
+    <section className="min-h-screen bg-hero-gradient flex flex-col relative">
+      {/* Navigation */}
+      <nav className="absolute top-0 left-0 right-0 z-10 p-6">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className="text-2xl font-poppins font-bold text-white">
+            Louay ElGarhy
+          </div>
           <LanguageSwitcher />
         </div>
-        
-        <div className="animate-fade-in">
-          <p className="text-lg text-muted-foreground mb-4">{t('hero.greeting')}</p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            {t('hero.name')}
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-            {t('hero.title')}
-          </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            {t('hero.description')}
-          </p>
-          
-          {/* Social links */}
-          <div className="flex justify-center gap-4 mb-8">
-            {/* <Button variant="outline" size="sm" className="gap-2">
-              <Github className="w-4 h-4" />
-              GitHub
-            </Button> */}
-            <Button variant="outline" size="sm" className="gap-2">
-              <Linkedin className="w-4 h-4" />
-              LinkedIn
-            </Button>
-            <Button variant="outline" size="sm" className="gap-2">
-              <Mail className="w-4 h-4" />
-              Contact
-            </Button>
-          </div>
+      </nav>
 
-          <Button onClick={scrollToProjects} className="gap-2 shadow-glow-primary hover:shadow-glow-accent transition-all duration-300">
-            {t('hero.viewWork')}
-            <ArrowDown className="w-4 h-4 animate-bounce" />
-          </Button>
+      {/* Hero Content */}
+      <div className="flex-1 flex items-center justify-center px-4">
+        <div className="container mx-auto max-w-6xl text-center text-white">
+          <div className="animate-fade-in">
+            <p className="text-xl font-open-sans mb-4 opacity-90">{t('hero.greeting')}</p>
+            <h1 className="text-5xl md:text-7xl font-poppins font-bold mb-6 leading-tight">
+              {t('hero.name')}
+            </h1>
+            <h2 className="text-2xl md:text-3xl font-poppins font-semibold mb-8 text-primary-glow">
+              {t('hero.title')}
+            </h2>
+            <p className="text-lg md:text-xl font-open-sans mb-12 max-w-3xl mx-auto leading-relaxed opacity-90">
+              {t('hero.description')}
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+              <Button 
+                size="lg" 
+                onClick={scrollToProjects}
+                className="bg-white text-secondary hover:bg-gray-100 font-open-sans font-semibold text-lg px-8 py-3 shadow-elegant"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                {t('hero.viewWork')}
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={scrollToContact}
+                className="border-white bg-white/10 text-white hover:bg-white hover:text-secondary font-open-sans font-semibold text-lg px-8 py-3 backdrop-blur-sm"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                {t('hero.downloadResume')}
+              </Button>
+            </div>
+          </div>
+          
+          <div className="animate-float">
+            <ArrowDown 
+              className="w-8 h-8 mx-auto text-white opacity-70 cursor-pointer hover:opacity-100 transition-opacity"
+              onClick={scrollToProjects}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+				'open-sans': ['Open Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -123,10 +127,12 @@ export default {
 			},
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',
-				'card-gradient': 'var(--card-gradient)'
+				'card-gradient': 'var(--card-gradient)',
+				'section-gradient': 'var(--section-gradient)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
+				'card': 'var(--shadow-card)',
 				'glow-primary': 'var(--glow-primary)',
 				'glow-accent': 'var(--glow-accent)'
 			}

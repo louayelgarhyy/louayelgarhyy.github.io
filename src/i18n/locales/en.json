@@ -4,7 +4,8 @@
     "name": "Louay ElGarhy",
     "title": "Sr. Flutter Developer",
     "description": "I create beautiful, high-performance mobile applications that deliver exceptional user experiences across iOS and Android platforms.",
-    "viewWork": "View My Work"
+    "viewWork": "View My Work",
+    "downloadResume": "Download Resume"
   },
   "skills": {
     "title": "Skills & Expertise",
@@ -35,6 +36,110 @@
       "description": "I specialize in creating high-quality Flutter applications that work seamlessly across platforms. Let's discuss how I can help bring your vision to life.",
       "sendMessage": "Send Message",
       "downloadResume": "Download Resume"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate Flutter developer with a proven track record of creating exceptional mobile experiences",
+    "story": {
+      "title": "My Journey",
+      "paragraph1": "With over 5 years of experience in mobile development, I've dedicated my career to crafting beautiful, performant applications that users love. My journey began with native Android development, but I found my passion in Flutter's cross-platform capabilities.",
+      "paragraph2": "Today, I specialize in creating scalable, maintainable mobile applications that solve real-world problems. I believe in writing clean code, following best practices, and staying up-to-date with the latest industry trends."
+    },
+    "highlights": {
+      "experience": {
+        "title": "5+ Years Experience",
+        "description": "Extensive experience in mobile development with Flutter and native platforms"
+      },
+      "mobile": {
+        "title": "Cross-Platform Expert",
+        "description": "Specialized in creating apps that work seamlessly across iOS and Android"
+      },
+      "performance": {
+        "title": "Performance Focused",
+        "description": "Committed to delivering fast, smooth, and responsive user experiences"
+      },
+      "clients": {
+        "title": "Client Satisfaction",
+        "description": "Proven track record of delivering projects on time and exceeding expectations"
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "description": "Comprehensive mobile development services to bring your ideas to life",
+    "items": {
+      "mobile": {
+        "title": "Mobile App Development",
+        "description": "Custom Flutter applications for iOS and Android platforms",
+        "features": ["Cross-platform development", "Native performance", "Custom UI/UX design", "App store optimization"]
+      },
+      "web": {
+        "title": "Web Development",
+        "description": "Responsive web applications and progressive web apps",
+        "features": ["Responsive design", "Progressive Web Apps", "Modern frameworks", "API integration"]
+      },
+      "ui": {
+        "title": "UI/UX Design",
+        "description": "Beautiful and intuitive user interface and experience design",
+        "features": ["User research", "Wireframing", "Prototyping", "Design systems"]
+      },
+      "deployment": {
+        "title": "App Store Deployment",
+        "description": "Complete app store submission and optimization services",
+        "features": ["App store guidelines", "Submission process", "Asset preparation", "Store optimization"]
+      },
+      "maintenance": {
+        "title": "Maintenance & Support",
+        "description": "Ongoing app maintenance, updates, and technical support",
+        "features": ["Bug fixes", "Performance optimization", "Feature updates", "Technical support"]
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "Expert advice on mobile development strategy and architecture",
+        "features": ["Architecture planning", "Technology selection", "Code review", "Best practices"]
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Let's discuss how I can help bring your mobile app vision to life with cutting-edge Flutter development.",
+      "button": "Get Started"
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "description": "What my clients say about working with me",
+    "items": [
+      {
+        "name": "Ahmed Hassan",
+        "role": "CEO",
+        "company": "TechStart",
+        "content": "Louay delivered an exceptional Flutter app that exceeded our expectations. His attention to detail and technical expertise made our project a huge success.",
+        "rating": 5,
+        "avatar": "AH"
+      },
+      {
+        "name": "Sarah Johnson",
+        "role": "Product Manager",
+        "company": "InnovateCorp",
+        "content": "Working with Louay was a pleasure. He understood our requirements perfectly and delivered a high-quality app on time and within budget.",
+        "rating": 5,
+        "avatar": "SJ"
+      },
+      {
+        "name": "Mohammed Ali",
+        "role": "Founder",
+        "company": "StartupHub",
+        "content": "Louay's Flutter expertise helped us launch our app successfully across both iOS and Android. The code quality is outstanding and the app performs flawlessly.",
+        "rating": 5,
+        "avatar": "MA"
+      }
+    ],
+    "stats": {
+      "satisfaction": "Client Satisfaction",
+      "projects": "Completed Projects",
+      "clients": "Happy Clients",
+      "rating": "Average Rating"
     }
   },
   "projectDetail": {
