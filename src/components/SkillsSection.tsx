@@ -21,7 +21,7 @@ const SkillsSection = () => {
     {
       key: "backend",
       title: "Backend & APIs",
-      skills: ["Larave","PHP","Firebase","SQL","PhpMyAdmin", "REST APIs", "GraphQL", "SQLite", "Cloud Functions"],
+      skills: ["Laravel","PHP","Firebase","SQL","PhpMyAdmin","Postman", "REST APIs", "GraphQL", "SQLite", "Cloud Functions"],
       icon: "⚡"
     },
     {

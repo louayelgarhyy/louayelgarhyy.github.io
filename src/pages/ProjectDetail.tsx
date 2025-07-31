@@ -11,42 +11,67 @@ const ProjectDetail = () => {
 
   // Project data - in a real app, this would come from an API or context
   const projects = {
-    "ecommerce": {
-      title: "E-Commerce Mobile App",
-      description: "A full-featured e-commerce application with user authentication, product catalog, shopping cart, and payment integration using Stripe. The app provides a seamless shopping experience with modern UI design and smooth animations.",
-      longDescription: "This comprehensive e-commerce solution was built to handle everything from user registration to order fulfillment. It features a robust product catalog with advanced filtering, secure payment processing through Stripe, real-time order tracking, and push notifications for order updates. The app also includes an admin panel for inventory management and sales analytics.",
-      technologies: ["Flutter", "Firebase", "Stripe", "Provider", "REST API", "Cloud Functions"],
-      appStoreUrl: "https://apps.apple.com/app/id123456789",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.ecommerce",
+    "1": {
+      title: "Bazar - بازار",
+      description: "A feature-rich multi-vendor marketplace app with a modern UI and advanced social commerce features. Bazar combines traditional e-commerce with interactive content like reels to enhance user engagement.",
+      longDescription: `Bazar is a full-featured multi-vendor marketplace mobile application built with Flutter, Laravel and React.js. It reimagines online shopping by combining the functionality of a traditional e-commerce platform with modern social engagement features — offering users a seamless, interactive, and engaging experience.
+
+      The app allows users to browse products from multiple vendors, place orders, and interact with content-rich reels showcasing products through both photos and videos. Users can follow their favorite vendors, like products and reels, and leave ratings and reviews to help others make informed decisions.\n\
+          
+      Vendors can create profiles, list products with media-rich content, and engage directly with potential buyers through social-like features, making the selling experience more dynamic and personalized. Reels serve as a powerful marketing tool inside the app, where sellers can creatively promote their items.
+          
+      Push notifications are integrated using Firebase, ensuring users stay updated with order statuses, new product listings, promotional reels, and social activity. The backend is powered by a secure Laravel API, optimized behind Cloudflare for enhanced performance and protection.
+
+      The UI is fast, responsive, and built for both Android and iOS using Flutter, offering a consistent experience across platforms.`,
+
+      technologies: ["Flutter", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP", "CloudFlare"],
+      image: "/images/bazar/logo_banner.png",
+      appStoreUrl: "https://apps.apple.com/app/6720723099",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar",
+      websiteUrl: "https://bazar.coms.sa",
       features: [
-        "User Authentication & Profile Management",
-        "Product Catalog with Search & Filters",
-        "Shopping Cart & Wishlist",
-        "Secure Payment Gateway (Stripe)",
-        "Order Tracking & History",
-        "Push Notifications",
-        "Admin Dashboard",
-        "Multi-language Support"
+        "✅ Cross-Platform Development: Built using Flutter, ensuring a smooth and consistent experience across both Android and iOS.",
+        "⚙️ Laravel REST API Backend: A secure, scalable backend powering user management, product handling, and real-time data operations.",
+        "🔔 Push Notifications (Firebase): Real-time alerts for orders, promotions, follows, likes, and app activity using Firebase Cloud Messaging.",
+        "🌐 Cloudflare Integration: Accelerated content delivery and DDoS protection for backend APIs and static assets.",
+        "🛒 Multi-Vendor Marketplace: Supports multiple sellers with individual storefronts and profile pages.",
+        "📦 Product Management: Add, edit, delete products with support for media (images, videos), price, and detailed descriptions.",
+        "📊 Order Management: Full lifecycle management from cart to checkout to order tracking.",
+        "🛠️ Vendor Panel Features: Vendors can manage their own products, view orders, track stats, and publish reels.",
+        "🎥 Reels with Video & Images: Each vendor can publish reels with photos and/or videos to showcase products in an engaging way.",
+        "❤️ Like System: Users can like products and reels to express interest and save them for later.",
+        "⭐ Ratings & Reviews: Buyers can rate and review products after purchase to build community trust.",
+        "🔍 Smart Search & Filters: Advanced search across vendors and products with multiple filtering options.",
+        "👤 User Profiles & Vendor Follow: Users can follow vendors and receive updates about their new products or content.",
+        "📂 Social Feed Style Browsing: Scrollable feed of reels and promoted products for better discovery.",
+        "💬 Multi-language Support: Prepared for internationalization and localization (i18n) using Flutter's localization system.",
+        "🌙 Dark Mode Ready: Fully adaptive UI for both light and dark themes.",
+        "🔐 Secure Authentication: Email/password or social login authentication (extendable).",
+        "🔄 Real-time UI Updates: State management using Provider or Riverpod to keep UI reactive.",
+        "📈 Performance Optimized: Lightweight UI, lazy loading images, and efficient network calls.",
+        "📱 Modern UI/UX: Clean, intuitive, mobile-first design focused on engagement and ease-of-use."
       ],
+
       stats: {
-        downloads: "50K+",
-        rating: "4.8",
-        reviews: "2.1K"
+        downloads: "100K+",
+        // rating: "4.8",
+        // reviews: "2.1K"
       },
       screenshots: [
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=300&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=600&fit=crop&sat=-100",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=300&h=600&fit=crop&sat=-100"
+        "/images/bazar/frame1.jpg",
+        "/images/bazar/Frame 4.jpg",
+        "/images/bazar/Frame 5.jpg",
+        "/images/bazar/Frame 6.jpg"
       ]
     },
-    "social": {
+    "2": {
       title: "Social Media Dashboard",
       description: "A comprehensive social media management app with analytics, post scheduling, and multi-platform integration.",
       longDescription: "This powerful social media management tool helps businesses and content creators manage their social presence across multiple platforms. With advanced analytics, automated posting, engagement tracking, and team collaboration features, it's designed to streamline social media workflows.",
       technologies: ["Flutter", "GraphQL", "BLoC", "Hive", "Push Notifications", "Analytics"],
       appStoreUrl: "https://apps.apple.com/app/id123456790",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.socialmedia",
+      websiteUrl: null,
       features: [
         "Multi-platform Integration",
         "Post Scheduling & Automation",
@@ -76,6 +101,7 @@ const ProjectDetail = () => {
       technologies: ["Flutter", "SQLite", "Charts", "Camera", "Health APIs", "ML Kit"],
       appStoreUrl: "https://apps.apple.com/app/id123456791",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.fitness",
+      websiteUrl: null,
       features: [
         "Workout Planning & Tracking",
         "Nutrition Logging & Calorie Counter",
@@ -105,6 +131,7 @@ const ProjectDetail = () => {
       technologies: ["Flutter", "Google Maps", "Local Storage", "API Integration", "Offline Support"],
       appStoreUrl: "https://apps.apple.com/app/id123456792",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.travel",
+      websiteUrl: null,
       features: [
         "Trip Planning & Itinerary Management",
         "Expense Tracking & Budget Management",
@@ -180,7 +207,7 @@ const ProjectDetail = () => {
               </div>
               <span className="text-sm text-muted-foreground">{t('projectDetail.stats.downloads')}</span>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="flex items-center justify-center gap-1 mb-1">
                 <Star className="w-4 h-4 text-yellow-500" />
                 <span className="font-bold text-lg">{project.stats.rating}</span>
@@ -193,25 +220,33 @@ const ProjectDetail = () => {
                 <span className="font-bold text-lg">{project.stats.reviews}</span>
               </div>
               <span className="text-sm text-muted-foreground">{t('projectDetail.stats.reviews')}</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Store Buttons */}
-          <div className="flex justify-center gap-4">
-            <Button 
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button
               className="gap-2"
               onClick={() => window.open(project.appStoreUrl, '_blank')}
             >
-              <Smartphone className="w-4 h-4" />
+              <i className="ri-apple-fill"></i>
               {t('projectDetail.appStore')}
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="gap-2"
               onClick={() => window.open(project.playStoreUrl, '_blank')}
             >
-              <Play className="w-4 h-4" />
+              <i className="ri-google-play-fill "></i>
               {t('projectDetail.googlePlay')}
+            </Button>
+            <Button
+              variant="outline"
+              className="gap-2"
+              onClick={() => window.open(project.websiteUrl, '_blank')}
+            >
+              <i className="ri-global-line "></i>
+              {t('projectDetail.website')}
             </Button>
           </div>
         </div>
@@ -221,16 +256,17 @@ const ProjectDetail = () => {
           <h2 className="text-3xl font-bold text-center mb-8 text-foreground">{t('projectDetail.screenshots')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {project.screenshots.map((screenshot, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="bg-card-gradient border-border/50 shadow-elegant hover:shadow-glow-primary transition-all duration-300 animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-2">
-                  <img 
-                    src={screenshot} 
+                  <img
+                    src={screenshot}
                     alt={`${project.title} Screenshot ${index + 1}`}
-                    className="w-full h-64 object-cover rounded-lg"
+                    // className="w-full h-64 object-cover rounded-lg"
+                    className="w-full object-cover rounded-lg"
                   />
                 </CardContent>
               </Card>
@@ -244,7 +280,7 @@ const ProjectDetail = () => {
           <Card className="bg-card-gradient border-border/50 shadow-elegant animate-fade-in">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-card-foreground mb-4">{t('projectDetail.overview')}</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
                 {project.longDescription}
               </p>
             </CardContent>
@@ -256,7 +292,7 @@ const ProjectDetail = () => {
               <h3 className="text-2xl font-bold text-card-foreground mb-4">{t('projectDetail.features')}</h3>
               <div className="grid grid-cols-1 gap-3">
                 {project.features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                  <div key={index} className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span className="text-muted-foreground">{feature}</span>
                   </div>
@@ -272,7 +308,7 @@ const ProjectDetail = () => {
             <h3 className="text-2xl font-bold text-card-foreground mb-6 text-center">Technologies Used</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {project.technologies.map((tech) => (
-                <Badge 
+                <Badge
                   key={tech}
                   variant="secondary"
                   className="bg-secondary/50 text-secondary-foreground hover:bg-primary/20 hover:text-primary transition-colors px-4 py-2 text-sm"

@@ -13,14 +13,16 @@ const ProjectsSection = () => {
       id: "1",
       title: "Bazar - بازار",
       description: "A feature-rich multi-vendor marketplace app with a modern UI and advanced social commerce features. Bazar combines traditional e-commerce with interactive content like reels to enhance user engagement.",
-      technologies: ["Flutter", "Firebase",  "Clean Architecture", "Provider","REST API", "Laravel", "HTML", "CSS", "JavaScript", "PHP","CloudFlare"],
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-      appStoreUrl: "https://apps.apple.com/app/id123456789",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar",
+      technologies: ["Flutter", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP", "CloudFlare"],
+      image: "/images/bazar/logo_banner.png",
+      appStoreUrl: "https://apps.apple.com/app/6720723099",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar",
+      websiteUrl: "https://bazar.coms.sa",
       features: [
         "User & Vendor Authentication",
         "Multi-Vendor Marketplace",
         "Product Browsing & Search",
+        "Filtering System",
         "Shopping Cart & Order Placement",
         "Real-time Push Notifications",
         "Ratings & Reviews System",
@@ -35,35 +37,175 @@ const ProjectsSection = () => {
       ]
     },
     {
-      id: "social",
-      title: "Social Media Dashboard",
-      description: "A comprehensive social media management app with analytics, post scheduling, and multi-platform integration.",
-      technologies: ["Flutter", "GraphQL", "BLoC", "Hive", "Push Notifications"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      appStoreUrl: "https://apps.apple.com/app/id123456790",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.socialmedia",
-      features: ["Analytics Dashboard", "Post Scheduling", "Real-time Updates", "Multi-platform"]
+      id: "2",
+      title: "Bazar Market - متاجر بازار",
+      description: "A comprehensive Bazar market management app with analytics, post scheduling, and multi-platform integration.",
+      technologies: ["Flutter", "Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP", "CloudFlare"],
+      image: "/images/bazar/logo_banner.png",
+      appStoreUrl: "https://apps.apple.com/app/6723871374?platform=iphone",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar",
+      websiteUrl: "https://bazar.coms.sa",
+      features: [
+        "Vendor Authentication",
+        "Filtering System",
+        "Real-time Push Notifications",
+        "Ratings & Reviews System",
+        "Follow Vendors & Users",
+        "Like Products & Reels",
+        "Reels with Videos & Photos",
+        "Interactive Social Feed",
+        "Vendor Profiles",
+        "Order History",
+        "Secure RESTful API Integration",
+        "Cloudflare Optimization"
+      ]
     },
     {
-      id: "fitness",
-      title: "Fitness Tracking App",
+      id: "3",
+      title: "(Saudi Government) Salam for Cultural Communication - سلام للتواصل الحضاري",
       description: "A comprehensive fitness app with workout tracking, nutrition logging, progress analytics, and social features.",
       technologies: ["Flutter", "SQLite", "Charts", "Camera", "Health APIs"],
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-      appStoreUrl: "https://apps.apple.com/app/id123456791",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.fitness",
+      image: "/images/salam/logo/logo_salam.png",
+      appStoreUrl: null,
+      playStoreUrl: null,
+      websiteUrl: 'https://salam4cc.org/',
       features: ["Workout Tracking", "Nutrition Logging", "Progress Charts", "Social Features"]
     },
     {
-      id: "travel",
-      title: "Travel Planning App",
+      id: "4",
+      title: "DAFFA for Abayat",
       description: "An intuitive travel planning application with itinerary management, expense tracking, and offline maps integration.",
       technologies: ["Flutter", "Google Maps", "Local Storage", "API Integration"],
-      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop",
-      appStoreUrl: "https://apps.apple.com/app/id123456792",
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.example.travel",
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://play.google.com/store/apps/details?id=com.daffa.app",
+      playStoreUrl: "https://apps.apple.com/us/app/daffa/id1502627950?platform=iphone",
+      websiteUrl: null,
       features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
+    },
+    {
+      id: "5",
+      title: "Mazij - مزيج",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps","API Integration","Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.mazij.app&hl=en",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
+    },
+    {
+      id: "6",
+      title: "Sarfha - صرّفها",
+      description: "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices.",
+      technologies: ["Flutter", "Google Maps","API Integration","Firebase", "Clean Architecture", "Provider", "REST API", "Push Notifications", "Laravel", "HTML", "CSS", "JavaScript", "PHP"],
+      image: "/images/daffa/logo.png",
+      appStoreUrl: "https://apps.apple.com/us/app/mazij/id6502800190?l=ar&platform=iphone",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.mazij.app&hl=en",
+      websiteUrl: null,
+      features: ["Itinerary Planning", "Expense Tracking", "Offline Maps", "Weather Integration"]
+    },
+    {
+      id: "7",
+      title: "دعاية بلس أعمال",
+      date: "Aug 13, 2024",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.dieayaplus.market&hl=en"
+    },
+    {
+      id: "8",
+      title: "Bazar - بازار",
+      date: "Oct 1, 2024",
+      downloads: "+100K downloads",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar"
+    },
+    {
+      id: "9",
+      title: "متاجر بازار",
+      date: "Oct 1, 2024",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar"
+    },
+    {
+      id: "10",
+      title: "Taivay",
+      date: "Oct 18, 2024",
+      appStoreUrl: "https://apps.apple.com/us/app/%D8%AA%D9%8A%D9%81%D8%A7%D9%8A/id6739472701"
+    },
+    {
+      id: "11",
+      title: "معك",
+      date: "Oct 19, 2024",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.maak.sa"
+    },
+    {
+      id: "12",
+      title: "Cool Car - كول كار",
+      date: "Nov 8, 2024",
+      appStoreUrl: "https://apps.apple.com/ae/app/cool-car-%D9%83%D9%88%D9%84-%D9%83%D8%A7%D8%B1/id6737987479?platform=iphone",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.cool.car.sa",
+      websiteUrl: "coolcar.com.sa",
+      figmaUrl: "https://www.figma.com/design/9w8a1dBELXpirfDLeIsJ2N/Buy-your-dream-car-(Community)?node-id=0-1&p=f&t=gD2G5wGzEZGldjmK-0"
+    },
+    {
+      id: "13",
+      title: "دليل وجهتك",
+      date: "Nov 19, 2024",
+      appStoreUrl: "https://apps.apple.com/kw/app/%D8%AF%D9%84%D9%8A%D9%84-%D9%88%D8%AC%D9%87%D8%AA%D9%83/id6738397663?platform=iphone",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.dalilwejhtak"
+    },
+    {
+      id: "14",
+      title: "Damin",
+      date: "Jan 20, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.damin.sa&hl=en"
+    },
+    {
+      id: "15",
+      title: "Tissue wishen - مناديل واشن",
+      date: "Feb 1, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.tissue&hl=en"
+    },
+    {
+      id: "16",
+      title: "Heaven Valley",
+      date: "Feb 11, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_vally&hl=en"
+    },
+    {
+      id: "17",
+      title: "Heaven Valley Admin",
+      date: "Feb 13, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_admin&hl=en"
+    },
+    {
+      id: "18",
+      title: "Noot",
+      date: "Mar 4, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.noot&hl=en"
+    },
+    {
+      id: "19",
+      title: "Noot Owner",
+      date: "Mar 4, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.noot_owner&hl=en"
+    },
+    {
+      id: "20",
+      title: "ROZ - روز",
+      date: "Mar 13, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.roz.sa"
+    },
+    {
+      id: "21",
+      title: "Breeze - بريز",
+      date: "Apr 12, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.breeze.sa&hl=en"
+    },
+    {
+      id: "22",
+      title: "Breeze Admin",
+      date: "Apr 12, 2025",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.breeze_delivery&hl=en"
     }
+
   ];
 
   return (
@@ -116,6 +258,7 @@ const ProjectsSection = () => {
                   </div>
 
                   <div className="flex gap-3" onClick={(e) => e.stopPropagation()}>
+                    {project.appStoreUrl && (
                     <Button
                       variant="outline"
                       size="sm"
@@ -125,35 +268,54 @@ const ProjectsSection = () => {
                         window.open(project.appStoreUrl, '_blank');
                       }}
                     >
-                      <Smartphone className="w-4 h-4" />
+                      <i className="ri-apple-fill"></i>
                       {t('projects.appStore')}
                     </Button>
-                    <Button
-                      size="sm"
-                      className="gap-2 flex-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(project.playStoreUrl, '_blank');
-                      }}
-                    >
-                      <Play className="w-4 h-4" />
-                      {t('projects.googlePlay')}
-                    </Button>
+                    )}
+                    {project.playStoreUrl && (
+                      <Button
+                        size="sm"
+                        className="gap-2 flex-1"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(project.playStoreUrl, '_blank');
+                        }}
+                      >
+                        <i className="ri-google-play-fill "></i>
+                        {t('projects.googlePlay')}
+                      </Button>
+                    )}
+
+                    {project.websiteUrl && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="gap-2 flex-1"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(project.websiteUrl, '_blank');
+                        }}
+                      >
+                        <i className="ri-global-fill"></i>
+                        {t('projects.website')}
+                      </Button>
+                    )}
+
                   </div>
                 </CardContent>
               </Card>
             </Link>
           ))}
         </div>
-
+        {/* 
         <div className="text-center mt-12">
           <Button variant="outline" className="gap-2">
             <Smartphone className="w-4 h-4" />
             View All Apps on Store
           </Button>
-        </div>
+        </div> */}
       </div>
-    </section>
+    </section >
   );
 };
 

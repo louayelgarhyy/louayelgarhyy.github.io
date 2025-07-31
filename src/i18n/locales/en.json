@@ -21,6 +21,7 @@
     "description": "A showcase of my mobile applications and their impact",
     "appStore": "App Store",
     "googlePlay": "Google Play",
+    "website": "Website",
     "viewDetails": "View Details"
   },
   "contact": {
@@ -41,8 +42,9 @@
     "overview": "Overview",
     "features": "Key Features",
     "screenshots": "Screenshots",
-    "appStore": "Download on App Store",
-    "googlePlay": "Get it on Google Play",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "website": "Visit Website",
     "stats": {
       "downloads": "Downloads",
       "rating": "Rating",
