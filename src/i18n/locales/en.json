@@ -17,13 +17,31 @@
       "tools": "Tools & Others"
     }
   },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects", 
+    "about": "About",
+    "contact": "Contact"
+  },
   "projects": {
     "title": "Featured Projects",
     "description": "A showcase of my mobile applications and their impact",
-    "appStore": "App Store",
-    "googlePlay": "Google Play",
-    "website": "Website",
-    "viewDetails": "View Details"
+    "featured": "Featured Projects",
+    "viewDetails": "View Details",
+    "details": "Details",
+    "store": "Store",
+    "categories": {
+      "all": "All Projects",
+      "ecommerce": "E-commerce",
+      "marketplace": "Marketplace", 
+      "web": "Web",
+      "utility": "Utility",
+      "beauty": "Beauty",
+      "deals": "Deals & Coupons",
+      "healthcare": "Healthcare",
+      "travel": "Travel",
+      "real_estate": "Real Estate"
+    }
   },
   "contact": {
     "title": "Let's Work Together",
