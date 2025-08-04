@@ -6,17 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: 'https://github.com/louayelgharhy',
+      href: 'https://github.com/louayelgarhyy',
       label: 'GitHub'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/louay-el-gharhy',
+      href: 'https://linkedin.com/in/louayelgarhy',
       label: 'LinkedIn'
     },
     {
       icon: Mail,
-      href: 'mailto:louay.elgharhy@example.com',
+      href: 'mailto:louay.elgarhy@example.com',
       label: 'Email'
     }
   ];
@@ -79,15 +79,15 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-muted-foreground text-sm">
                   <Mail className="w-4 h-4 flex-shrink-0" />
-                  <span>louay.elgharhy@example.com</span>
+                  <span>louayelgarhy@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-muted-foreground text-sm">
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+20 1144373132</span>
                 </div>
                 <div className="flex items-center space-x-3 text-muted-foreground text-sm">
                   <MapPin className="w-4 h-4 flex-shrink-0" />
-                  <span>Saudi Arabia</span>
+                  <span>6th of October, Giza, Egypt</span>
                 </div>
               </div>
             </div>

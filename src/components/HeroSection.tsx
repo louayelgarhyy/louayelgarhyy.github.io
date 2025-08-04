@@ -24,9 +24,9 @@ const HeroSection = () => {
               <img
                 src={profilePicture}
                 alt="Louay ElGarhy"
-                className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl"
+                className="w-32 h-32 rounded-full object-cover shadow-xl sm:w-40 sm:h-40"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 rounded-full "></div>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const HeroSection = () => {
             {/* Social Links */}
             <div className="flex justify-center space-x-6 pt-8">
               <a
-                href="https://github.com/louayelgharhy"
+                href="https://github.com/louayelgarhyy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors hover-lift"
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/louay-el-gharhy"
+                href="https://linkedin.com/in/louayelgarhy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors hover-lift"
@@ -89,7 +89,7 @@ const HeroSection = () => {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="mailto:louay.elgharhy@example.com"
+                href="mailto:louay.elgarhy@example.com"
                 className="text-muted-foreground hover:text-primary transition-colors hover-lift"
                 aria-label="Email"
               >

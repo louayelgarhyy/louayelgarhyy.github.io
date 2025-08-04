@@ -65,7 +65,7 @@ const Navigation = () => {
           {/* Right side - Social Links & Language Switcher */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com/louayelgharhy"
+              href="https://github.com/louayelgarhyy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -73,7 +73,7 @@ const Navigation = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/louay-el-gharhy"
+              href="https://linkedin.com/in/louayelgarhy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -81,7 +81,7 @@ const Navigation = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:louay.elgharhy@example.com"
+              href="mailto:louayelgarhy@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5" />
@@ -118,7 +118,7 @@ const Navigation = () => {
               <div className="flex items-center justify-between px-3 py-2 border-t border-border/50 mt-4">
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/louayelgharhy"
+                    href="https://github.com/louayelgarhyy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -126,7 +126,7 @@ const Navigation = () => {
                     <Github className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://linkedin.com/in/louay-el-gharhy"
+                    href="https://linkedin.com/in/louayelgarhy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -134,7 +134,7 @@ const Navigation = () => {
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a
-                    href="mailto:louay.elgharhy@example.com"
+                    href="mailto:louayelgarhy@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     <Mail className="w-5 h-5" />

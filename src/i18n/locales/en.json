@@ -76,12 +76,12 @@
       },
       "web": {
         "title": "Web Development",
-        "description": "Responsive web applications and progressive web apps",
+        "description": "Responsive web applications and progressive web apps using Flutter or React.js",
         "features": ["Responsive design", "Progressive Web Apps", "Modern frameworks", "API integration"]
       },
       "ui": {
         "title": "UI/UX Design",
-        "description": "Beautiful and intuitive user interface and experience design",
+        "description": "Beautiful and intuitive user interface and experience design using Figma and Adobe XD",
         "features": ["User research", "Wireframing", "Prototyping", "Design systems"]
       },
       "deployment": {
@@ -111,25 +111,25 @@
     "description": "What my clients say about working with me",
     "items": [
       {
-        "name": "Ahmed Hassan",
-        "role": "CEO",
-        "company": "TechStart",
+        "name": "Mohamed Adrees",
+        "role": "Technical Consultant",
+        "company": "Saudi Governmnet",
         "content": "Louay delivered an exceptional Flutter app that exceeded our expectations. His attention to detail and technical expertise made our project a huge success.",
         "rating": 5,
         "avatar": "AH"
       },
       {
-        "name": "Sarah Johnson",
-        "role": "Product Manager",
-        "company": "InnovateCorp",
+        "name": "Mobarak",
+        "role": "CEO",
+        "company": "Doha Apps",
         "content": "Working with Louay was a pleasure. He understood our requirements perfectly and delivered a high-quality app on time and within budget.",
         "rating": 5,
         "avatar": "SJ"
       },
       {
-        "name": "Mohammed Ali",
+        "name": "Mohamed Ali",
         "role": "Founder",
-        "company": "StartupHub",
+        "company": "Taivay",
         "content": "Louay's Flutter expertise helped us launch our app successfully across both iOS and Android. The code quality is outstanding and the app performs flawlessly.",
         "rating": 5,
         "avatar": "MA"

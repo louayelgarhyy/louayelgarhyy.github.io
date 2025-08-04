@@ -6,9 +6,9 @@ const AboutSection = () => {
 
   const stats = [
     { number: '5+', label: 'Years Experience', icon: Award },
-    { number: '20+', label: 'Apps Published', icon: Smartphone },
+    { number: '30+', label: 'Apps Published', icon: Smartphone },
     { number: '100K+', label: 'Downloads', icon: Globe },
-    { number: '99%', label: 'Client Satisfaction', icon: Users },
+    // { number: '99%', label: 'Client Satisfaction', icon: Users },
   ];
 
   const highlights = [
@@ -27,11 +27,11 @@ const AboutSection = () => {
       title: t('about.highlights.performance.title'),
       description: t('about.highlights.performance.description')
     },
-    {
-      icon: Users,
-      title: t('about.highlights.clients.title'),
-      description: t('about.highlights.clients.description')
-    }
+    // {
+    //   icon: Users,
+    //   title: t('about.highlights.clients.title'),
+    //   description: t('about.highlights.clients.description')
+    // }
   ];
 
   return (
@@ -49,7 +49,7 @@ const AboutSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -110,7 +110,7 @@ const AboutSection = () => {
           </div>
 
           {/* Highlights Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {highlights.map((highlight, index) => (
               <div
                 key={index}

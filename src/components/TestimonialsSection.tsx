@@ -67,16 +67,16 @@ const TestimonialsSection = () => {
           <div className="text-center mt-12">
             <div className="bg-card rounded-2xl shadow-card p-8 border border-border">
               <div className="flex items-center justify-center gap-8 flex-wrap">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-3xl font-poppins font-bold text-primary mb-1">98%</div>
                   <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.satisfaction')}</div>
-                </div>
+                </div> */}
                 <div className="text-center">
-                  <div className="text-3xl font-poppins font-bold text-primary mb-1">20+</div>
+                  <div className="text-3xl font-poppins font-bold text-primary mb-1">30+</div>
                   <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.projects')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-poppins font-bold text-primary mb-1">15+</div>
+                  <div className="text-3xl font-poppins font-bold text-primary mb-1">20+</div>
                   <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.clients')}</div>
                 </div>
                 <div className="text-center">

@@ -26,7 +26,7 @@ const ContactSection = () => {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-card-foreground mb-2">{t('contact.email')}</h3>
-                <p className="text-muted-foreground text-sm">your.email@example.com</p>
+                <p className="text-muted-foreground text-sm">louayelgarhy@gmail.com</p>
               </CardContent>
             </Card>
 
@@ -36,7 +36,7 @@ const ContactSection = () => {
                   <Phone className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="font-semibold text-card-foreground mb-2">{t('contact.phone')}</h3>
-                <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground text-sm">+20 1144373132</p>
               </CardContent>
             </Card>
 
@@ -46,7 +46,7 @@ const ContactSection = () => {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold text-card-foreground mb-2">{t('contact.location')}</h3>
-                <p className="text-muted-foreground text-sm">Your City, Country</p>
+                <p className="text-muted-foreground text-sm">6th of October, Giza, Egypt</p>
               </CardContent>
             </Card>
           </div>
