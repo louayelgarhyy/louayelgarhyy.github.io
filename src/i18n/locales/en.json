@@ -173,5 +173,103 @@
       "rating": "Rating",
       "reviews": "Reviews"
     }
+  },
+  "projectsList": {
+    "bazar": {
+      "title": "Bazar - بازار",
+      "description": "+100K Download, A feature-rich multi-vendor marketplace app with a modern UI and advanced social commerce features."
+    },
+    "salam": {
+      "title": "(Saudi Government) Salam for Cultural Communication",
+      "description": "A comprehensive platform for cultural communication and understanding in Saudi Arabia."
+    },
+    "bazarMarket": {
+      "title": "Bazar Market - متاجر بازار",
+      "description": "A comprehensive Bazar market management app with analytics, post scheduling, and multi-platform integration."
+    },
+    "daffa": {
+      "title": "DAFFA for Abayat",
+      "description": "An elegant e-commerce application for traditional clothing with modern features."
+    },
+    "coolCar": {
+      "title": "Cool Car - كول كار",
+      "description": "Premium car protection & insulation products at your fingertips"
+    },
+    "sarfha": {
+      "title": "Sarfha - صرّفها",
+      "description": "Sarfha is your all-in-one platform for auctions, classified ads, and earning rewards. Whether you're selling, promoting, or engaging with an audience — Sarfha makes it easy and rewarding."
+    },
+    "taivay": {
+      "title": "Taivay",
+      "description": "An open marketplace app for online buying and selling in Mauritania with ease negotiation and rewards."
+    },
+    "heavenValley": {
+      "title": "Heaven Valley",
+      "description": "Your all‑in‑one beauty companion: salon services, premium cosmetics shopping, and expert consultations."
+    },
+    "heavenValleyAdmin": {
+      "title": "Heaven Valley Admin",
+      "description": "A smart, secure Heaven Admin admin app designed to streamline your workday: organize tasks, schedule appointments, and stay connected with clients efficiently."
+    },
+    "dieayaPlus": {
+      "title": "Dieaya Plus - دعاية بلس",
+      "description": "Discover local markets and shop a wide selection of products with exclusive discounts—all in one easy‑to‑use app."
+    },
+    "dieayaPlusBusiness": {
+      "title": "Dieaya Plus Business - دعاية بلس اعمال",
+      "description": "Business management platform for Dieaya Plus merchants to manage offers, analytics, and customer engagement."
+    },
+    "maak": {
+      "title": "Maak - معك",
+      "description": "Maak is a full-featured healthcare app offering remote medical and psychological consultations, easy appointment booking, and prescription refills for stable conditions — all from the comfort of your home."
+    },
+    "glamgo": {
+      "title": "GlamGo",
+      "description": "On-demand beauty services app connecting customers with professional beauty specialists for home and salon services."
+    },
+    "glamgoProvider": {
+      "title": "GlamGo Provider",
+      "description": "Professional app for beauty service providers to manage bookings, track earnings, and grow their beauty business."
+    },
+    "tissueWishen": {
+      "title": "Tissue Wishen - مناديل واشن",
+      "description": "Premium tissue and paper products marketplace with subscription services and bulk ordering for businesses and households."
+    },
+    "roz": {
+      "title": "Roz - روز",
+      "description": "ROZ makes Halal installments purchasing and selling products easy and accessible for everyone. Shop anytime, anywhere and earn with every purchase."
+    },
+    "dalilWijhitak": {
+      "title": "Dalil Wijhitak - دليل وجهتك",
+      "description": "Your ultimate travel guide and destination discovery app, Up to date on the latest events,popular places, holidays and book unique experience with ease in the Kingdom of Saudi Arabia with local insights and cultural experiences."
+    },
+    "akareya": {
+      "title": "Akareya Platform - منصة العقارية",
+      "description": "Comprehensive real estate platform for buying, selling, and renting properties with virtual tours and smart matching."
+    },
+    "damin": {
+      "title": "Damin",
+      "description": "An innovative escrow‑style app that safeguards buying and selling transactions by holding payments in trust until deals complete successfully."
+    },
+    "noot": {
+      "title": "Noot",
+      "description": "Discover the best real estate rental options across Saudi Arabia with Noot — your ultimate solution for renting apartments, villas, offices, and commercial spaces. Whether you're seeking housing or commercial property, the app offers precise filters for location, price, and amenities to help you find the perfect match. It delivers a transparent, secure user experience with direct communication between renters and property owners, detailed listings, and clear images. Enjoy innovative rental solutions combining comfort, technology, and trust."
+    },
+    "nootOwner": {
+      "title": "Noot Owner",
+      "description": "Noot Owner is your trusted partner in the property rental journey, offering a seamless, transparent, and secure experience. Discover a comprehensive marketplace tailored to tenants and business users across Saudi Arabia—search apartments, villas, offices, and commercial spaces with precision using powerful filters like price range, location, and amenities. Our app empowers you with clear property details and high‑quality images, helping you make informed decisions quickly and confidently. Directly communicate with landlords and complete rental transactions through our built‑in messaging system, all while ensuring safe, encrypted data exchange. Whether you're searching for a long‑term residence or a commercial lease, Noot Owner combines innovation with simplicity to streamline your rental experience from start to finish."
+    },
+    "breeze": {
+      "title": "Breeze - بريز",
+      "description": "Your car wash app, “Bazaar”, provides a comprehensive experience for users to obtain car wash services with ease and ease. The application includes various service packages in addition to individual laundry options, with advanced features such as chat for direct communication and the use of coupons to obtain exclusive discounts. It allows users to easily manage orders, delivery addresses, and payment methods, while providing additional services such as advertising management and interest management to achieve an integrated user experience in both Arabic and English."
+    },
+    "breezeAdmin": {
+      "title": "Breeze Admin",
+      "description": "The delegate application is the tool intended for car wash service providers, as it allows representatives to receive new orders, view accurate customer and location details, and communicate instantly with customers through the built-in chat feature. The representative can easily update the order status (in progress, completed...) providing a flexible and organized working experience. The application is designed to support field service operations with high efficiency, and works in full integration with the customer application to ensure a seamless experience for both parties."
+    },
+    "mazij": {
+      "title": "Mazij",
+      "description": "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices."
+    }
   }
 }

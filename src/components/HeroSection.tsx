@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { ArrowDown, Mail, Github, Linkedin } from 'lucide-react';
 import profilePicture from '@/assets/profile-picture.jpg';
@@ -14,99 +15,234 @@ const HeroSection = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut" as any,
+      },
+    },
+  };
+
+  const profileVariants = {
+    hidden: { 
+      opacity: 0, 
+      scale: 0.8,
+      y: 50 
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut" as any,
+      },
+    },
+  };
+
+  const floatingAnimation = {
+    y: [-10, 10, -10],
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut" as any,
+    },
+  };
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.05,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut" as any,
+      },
+    },
+    tap: {
+      scale: 0.95,
+    },
+  };
+
+  const socialVariants = {
+    hover: {
+      scale: 1.2,
+      rotate: 5,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut" as any,
+      },
+    },
+  };
+
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative bg-hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <motion.div 
+          className="max-w-4xl mx-auto text-center"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {/* Profile Picture */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <img
+          <motion.div 
+            className="mb-8 flex justify-center"
+            variants={profileVariants}
+          >
+            <motion.div 
+              className="relative"
+              animate={floatingAnimation}
+            >
+              <motion.img
                 src={profilePicture}
                 alt="Louay ElGarhy"
                 className="w-32 h-32 rounded-full object-cover shadow-xl sm:w-40 sm:h-40"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               />
-              <div className="absolute inset-0 rounded-full "></div>
-            </div>
-          </div>
+              <motion.div 
+                className="absolute inset-0 rounded-full "
+                animate={{
+                  scale: [1, 1.1, 1],
+                  opacity: [0.5, 0.8, 0.5],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+            </motion.div>
+          </motion.div>
 
-          <div className="space-y-6 animate-fade-in">
-            <p className="text-lg text-muted-foreground font-medium">
+          <div className="space-y-6">
+            <motion.p 
+              className="text-lg text-muted-foreground font-medium"
+              variants={itemVariants}
+            >
               {t('hero.greeting')}
-            </p>
+            </motion.p>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            <motion.h1 
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight"
+              variants={itemVariants}
+            >
               {t('hero.name')}
-            </h1>
+            </motion.h1>
             
-            <h2 className="text-xl sm:text-2xl text-gradient font-semibold">
+            <motion.h2 
+              className="text-xl sm:text-2xl text-gradient font-semibold"
+              variants={itemVariants}
+            >
               {t('hero.title')}
-            </h2>
+            </motion.h2>
             
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <motion.p 
+              className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+              variants={itemVariants}
+            >
               {t('hero.description')}
-            </p>
+            </motion.p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-              <Button 
-                size="lg" 
-                onClick={scrollToProjects}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3 hover-lift"
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
+              variants={itemVariants}
+            >
+              <motion.div
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                <Mail className="w-5 h-5 mr-2" />
-                {t('hero.viewWork')}
-              </Button>
+                <Button 
+                  size="lg" 
+                  onClick={scrollToProjects}
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3"
+                >
+                  <Mail className="w-5 h-5 mr-2" />
+                  {t('hero.viewWork')}
+                </Button>
+              </motion.div>
               
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={scrollToContact}
-                className="border-border bg-background hover:bg-muted font-medium px-8 py-3 hover-lift"
+              <motion.div
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                {t('hero.downloadResume')}
-              </Button>
-            </div>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={scrollToContact}
+                  className="border-border bg-background hover:bg-muted font-medium px-8 py-3"
+                >
+                  {t('hero.downloadResume')}
+                </Button>
+              </motion.div>
+            </motion.div>
 
             {/* Social Links */}
-            <div className="flex justify-center space-x-6 pt-8">
-              <a
+            <motion.div 
+              className="flex justify-center space-x-6 pt-8"
+              variants={itemVariants}
+            >
+              <motion.a
                 href="https://github.com/louayelgarhyy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors hover-lift"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub"
+                variants={socialVariants}
+                whileHover="hover"
               >
                 <Github className="w-6 h-6" />
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://linkedin.com/in/louayelgarhy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors hover-lift"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn"
+                variants={socialVariants}
+                whileHover="hover"
               >
                 <Linkedin className="w-6 h-6" />
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="mailto:louay.elgarhy@example.com"
-                className="text-muted-foreground hover:text-primary transition-colors hover-lift"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
+                variants={socialVariants}
+                whileHover="hover"
               >
                 <Mail className="w-6 h-6" />
-              </a>
-            </div>
+              </motion.a>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown 
-          className="w-6 h-6 text-muted-foreground cursor-pointer hover:text-primary transition-colors"
-          onClick={scrollToProjects}
-        />
-      </div>
+      <motion.div 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <ArrowDown className="w-6 h-6 text-muted-foreground" />
+      </motion.div>
     </section>
   );
 };
