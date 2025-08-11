@@ -38,7 +38,7 @@ const Footer = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {t('hero.description')}
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 rtl:space-x-reverse">
                 {socialLinks.map((link) => (
                   <a
                     key={link.label}
@@ -79,15 +79,15 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="font-semibold text-foreground">{t('footer.getInTouch') || 'Get in Touch'}</h4>
               <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-muted-foreground text-sm">
+                <div className="flex items-center space-x-3 text-muted-foreground text-sm rtl:space-x-reverse">
                   <Mail className="w-4 h-4 flex-shrink-0" />
                   <span>louayelgarhy@gmail.com</span>
                 </div>
-                <div className="flex items-center space-x-3 text-muted-foreground text-sm">
+                <div className="flex items-center space-x-3 text-muted-foreground text-sm rtl:space-x-reverse">
                   <Phone className="w-4 h-4 flex-shrink-0" />
                   <span>+20 1144373132</span>
                 </div>
-                <div className="flex items-center space-x-3 text-muted-foreground text-sm">
+                <div className="flex items-center space-x-3 text-muted-foreground text-sm rtl:space-x-reverse">
                   <MapPin className="w-4 h-4 flex-shrink-0" />
                   <span>6th of October, Giza, Egypt</span>
                 </div>

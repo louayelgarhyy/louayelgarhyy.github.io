@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm">
-          <Globe className="h-4 w-4 mr-2" />
+          <Globe className="h-4 w-4 mr-2 rtl:mr-0 rtl:ml-2" />
           {i18n.language === 'ar' ? 'العربية' : 'English'}
         </Button>
       </DropdownMenuTrigger>

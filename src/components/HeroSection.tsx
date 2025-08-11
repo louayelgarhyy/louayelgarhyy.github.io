@@ -173,7 +173,7 @@ const HeroSection = () => {
                   onClick={scrollToProjects}
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3"
                 >
-                  <Mail className="w-5 h-5 mr-2" />
+                  <Mail className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
                   {t('hero.viewWork')}
                 </Button>
               </motion.div>
@@ -196,7 +196,7 @@ const HeroSection = () => {
 
             {/* Social Links */}
             <motion.div 
-              className="flex justify-center space-x-6 pt-8"
+              className="flex justify-center space-x-6 pt-8 rtl:space-x-reverse"
               variants={itemVariants}
             >
               <motion.a

@@ -49,7 +49,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-8 rtl:mr-10 rtl:ml-0 rtl:space-x-reverse">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -63,7 +63,7 @@ const Navigation = () => {
           </div>
 
           {/* Right side - Social Links & Language Switcher */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
             <a
               href="https://github.com/louayelgarhyy"
               target="_blank"
@@ -110,13 +110,13 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-primary transition-colors"
+                  className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-primary transition-colors rtl:text-right"
                 >
-                  {item.label}
+                  {t(`nav.${item.label}`)}
                 </button>
               ))}
               <div className="flex items-center justify-between px-3 py-2 border-t border-border/50 mt-4">
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 rtl:space-x-reverse">
                   <a
                     href="https://github.com/louayelgarhyy"
                     target="_blank"

@@ -39,8 +39,8 @@ const TestimonialsSection = () => {
                 </div>
 
                 <div className="relative mb-6">
-                  <Quote className="w-8 h-8 text-primary/20 absolute -top-2 -left-2" />
-                  <p className="text-foreground font-open-sans leading-relaxed italic pl-6">
+                  <Quote className="w-8 h-8 text-primary/20 absolute -top-2 -left-2 rtl:-right-2 rtl:left-auto" />
+                  <p className="text-foreground font-open-sans leading-relaxed italic pl-6 rtl:pr-6 rtl:pl-0">
                     "{testimonial.content}"
                   </p>
                 </div>

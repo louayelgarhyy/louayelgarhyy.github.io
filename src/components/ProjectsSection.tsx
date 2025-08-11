@@ -92,7 +92,7 @@ const ProjectsSection = () => {
                   className={`group hover-lift bg-card border-border shadow-card hover:shadow-elegant transition-all duration-300 ${index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-4 rtl:space-x-reverse">
                       <div className="w-16 h-16 rounded-lg overflow-hidden bg-muted flex-shrink-0">
                         <img
                           src={project.image}
@@ -125,7 +125,7 @@ const ProjectsSection = () => {
                             </Badge>
                           )}
                         </div>
-                        <div className="flex space-x-3">
+                        <div className="flex space-x-3 rtl:space-x-reverse">
                           <Link to={`/project/${project.id}`}>
                             <Button size="sm" className="text-xs" variant="gradient">
                               {t('projects.viewDetails')}
@@ -134,7 +134,7 @@ const ProjectsSection = () => {
                           {(project.playStoreUrl || project.appStoreUrl) && (
                             <a href={project.playStoreUrl || project.appStoreUrl} target="_blank" rel="noopener noreferrer">
                               <Button size="sm" variant="outline" className="text-xs">
-                                <Smartphone className="w-3 h-3 mr-1" />
+                                <Smartphone className="w-3 h-3 mr-1 rtl:mr-0 rtl:ml-1" />
                                 {t('projects.store')}
                               </Button>
                             </a>
@@ -215,7 +215,7 @@ const ProjectsSection = () => {
                                   )}
                                 </div>
 
-                                <div className="flex space-x-2">
+                                <div className="flex space-x-2 rtl:space-x-reverse">
                                   <Link to={`/project/${project.id}`} className="flex-1">
                                     <Button size="sm" className="w-full text-xs" variant="gradient">
                                       {t('projects.details')}
@@ -274,7 +274,7 @@ const ProjectsSection = () => {
 
               {/* Pagination dots */}
               {chunkedProjects.length > 1 && (
-                <div className="flex justify-center space-x-2 mt-8">
+                <div className="flex justify-center space-x-2 mt-8 rtl:space-x-reverse">
                   {chunkedProjects.map((_, index) => (
                     <button
                       key={index}
