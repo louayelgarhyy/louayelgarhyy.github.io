@@ -1,55 +1,59 @@
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Smartphone, Code, Palette, Rocket, Settings, Users } from 'lucide-react';
 
-const services = [
+const getServices = (t: any) => [
   {
     icon: Smartphone,
-    title: 'Mobile App Development',
+    title: t('services.items.mobile.title'),
     price: 9.99,
-    label: 'Mobile App Development - Starting from $9.99',
+    label: `${t('services.items.mobile.title')} - $9.99`,
   },
   {
     icon: Code,
-    title: 'Website Design',
+    title: t('services.items.web.title'),
     price: 29.99,
-    label: 'Website Design - Starting from $29.99',
+    label: `${t('services.items.web.title')} - $29.99`,
   },
   {
     icon: Palette,
-    title: 'UI/UX Design',
+    title: t('services.items.ui.title'),
     price: 19.99,
-    label: 'UI/UX Design - Starting from $19.99',
+    label: `${t('services.items.ui.title')} - $19.99`,
   },
   {
     icon: Rocket,
-    title: 'App Store Deployment',
+    title: t('services.items.deployment.title'),
     price: 14.99,
-    label: 'App Store Deployment - Starting from $14.99',
+    label: `${t('services.items.deployment.title')} - $14.99`,
   },
   {
     icon: Settings,
-    title: 'Maintenance & Support',
+    title: t('services.items.maintenance.title'),
     price: 24.99,
-    label: 'Maintenance & Support - Starting from $24.99',
+    label: `${t('services.items.maintenance.title')} - $24.99`,
   },
   {
     icon: Users,
-    title: 'Technical Consulting',
+    title: t('services.items.consulting.title'),
     price: 39.99,
-    label: 'Technical Consulting - Starting from $39.99',
+    label: `${t('services.items.consulting.title')} - $39.99`,
   },
 ];
 
 const PricingSection = ({ onServiceClick }: { onServiceClick: (serviceLabel: string) => void }) => {
+  const { t } = useTranslation();
+  const services = getServices(t);
+
   return (
     <section className="py-20 bg-background" id="pricing">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Pricing & Packages
+            {t('pricing.title') || 'Pricing & Packages'}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose the perfect service for your needs. Transparent pricing, no hidden fees!
+            {t('pricing.description') || 'Choose the perfect service for your needs. Transparent pricing, no hidden fees!'}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

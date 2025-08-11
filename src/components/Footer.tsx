@@ -1,6 +1,8 @@
 import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -32,9 +34,9 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Brand */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-foreground">Louay ElGarhy</h3>
+              <h3 className="text-xl font-bold text-foreground">{t('hero.name')}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Senior Flutter Developer specializing in creating beautiful, high-performance mobile applications for iOS and Android.
+                {t('hero.description')}
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (
@@ -54,13 +56,13 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div className="space-y-4">
-              <h4 className="font-semibold text-foreground">Quick Links</h4>
+              <h4 className="font-semibold text-foreground">{t('footer.quickLinks') || 'Quick Links'}</h4>
               <div className="space-y-2">
                 {[
-                  { label: 'Home', id: 'hero' },
-                  { label: 'About', id: 'about' },
-                  { label: 'Projects', id: 'projects' },
-                  { label: 'Contact', id: 'contact' },
+                  { label: t('nav.Home'), id: 'hero' },
+                  { label: t('nav.About'), id: 'about' },
+                  { label: t('nav.Projects'), id: 'projects' },
+                  { label: t('nav.Contact'), id: 'contact' },
                 ].map((link) => (
                   <button
                     key={link.id}
@@ -75,7 +77,7 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className="space-y-4">
-              <h4 className="font-semibold text-foreground">Get in Touch</h4>
+              <h4 className="font-semibold text-foreground">{t('footer.getInTouch') || 'Get in Touch'}</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-muted-foreground text-sm">
                   <Mail className="w-4 h-4 flex-shrink-0" />
@@ -96,7 +98,7 @@ const Footer = () => {
           {/* Bottom */}
           <div className="border-t border-border mt-8 pt-8 text-center">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Louay ElGarhy. All rights reserved. Built with React, TypeScript & Tailwind CSS.
+              {t('footer.copyright')} {currentYear} {t('hero.name')}. {t('footer.rights') || 'All rights reserved. Built with React, TypeScript & Tailwind CSS.'}
             </p>
           </div>
         </div>

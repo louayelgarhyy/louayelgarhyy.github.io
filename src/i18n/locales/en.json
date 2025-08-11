@@ -271,5 +271,32 @@
       "title": "Mazij",
       "description": "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices."
     }
+  },
+  "contact": {
+    "form": {
+      "title": "Contact Me",
+      "description": "Fill out the form below and I'll get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email", 
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Request sent successfully!",
+      "error": "Error sending request.",
+      "networkError": "Network error."
+    }
+  },
+  "pricing": {
+    "title": "Pricing & Packages",
+    "description": "Choose the perfect service for your needs. Transparent pricing, no hidden fees!"
+  },
+  "footer": {
+    "copyright": "©",
+    "tech": "using React & TypeScript",
+    "rights": "All rights reserved. Built with React, TypeScript & Tailwind CSS.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get in Touch"
   }
 }
