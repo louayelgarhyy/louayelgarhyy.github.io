@@ -56,7 +56,7 @@ const Navigation = () => {
                   onClick={() => scrollToSection(item.id)}
                   className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
                 >
-                  {item.label}
+                  {t(`nav.${item.label}`)}
                 </button>
               ))}
             </div>
