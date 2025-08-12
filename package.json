@@ -5,8 +5,9 @@
   "type": "module",
   "homepage": "https://louayelgarhyy.github.io/",
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist -b main",
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
