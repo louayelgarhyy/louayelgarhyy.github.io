@@ -13,10 +13,6 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
-    // Set initial state
-    handleScroll();
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -35,10 +31,8 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/90 backdrop-blur-lg border-b border-border/50 shadow-lg' 
-          : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'nav-blur shadow-md' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,11 +41,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className={`text-xl font-bold transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary' 
-                  : 'text-white hover:text-primary/80'
-              }`}
+              className="text-xl font-bold text-foreground hover:text-primary transition-colors"
             >
               Louay ElGarhy
             </button>
@@ -64,11 +54,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`transition-colors duration-200 text-sm font-medium ${
-                    isScrolled 
-                      ? 'text-muted-foreground hover:text-primary' 
-                      : 'text-white/90 hover:text-white'
-                  }`}
+                  className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
                 >
                   {t(`nav.${item.label}`)}
                 </button>
@@ -82,11 +68,7 @@ const Navigation = () => {
               href="https://github.com/louayelgarhyy"
               target="_blank"
               rel="noopener noreferrer"
-              className={`transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-muted-foreground hover:text-primary' 
-                  : 'text-white/80 hover:text-white'
-              }`}
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -94,21 +76,13 @@ const Navigation = () => {
               href="https://linkedin.com/in/louayelgarhy"
               target="_blank"
               rel="noopener noreferrer"
-              className={`transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-muted-foreground hover:text-primary' 
-                  : 'text-white/80 hover:text-white'
-              }`}
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="mailto:louayelgarhy@gmail.com"
-              className={`transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-muted-foreground hover:text-primary' 
-                  : 'text-white/80 hover:text-white'
-              }`}
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5" />
             </a>
@@ -121,11 +95,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className={`${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary' 
-                  : 'text-white hover:text-white/80'
-              }`}
+              className="text-foreground"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
@@ -135,7 +105,7 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-lg border-t border-border/50">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-lg border-t border-border/50">
               {navItems.map((item) => (
                 <button
                   key={item.id}

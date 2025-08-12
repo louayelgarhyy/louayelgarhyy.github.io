@@ -19,7 +19,7 @@
   },
   "nav": {
     "Home": "Home",
-    "Projects": "Projects", 
+    "Projects": "Projects",
     "About": "About",
     "Contact": "Contact"
   },
@@ -33,7 +33,7 @@
     "categories": {
       "all": "All Projects",
       "ecommerce": "E-commerce",
-      "marketplace": "Marketplace", 
+      "marketplace": "Marketplace",
       "web": "Web",
       "utility": "Utility",
       "beauty": "Beauty",
@@ -46,17 +46,28 @@
   "contact": {
     "title": "Let's Work Together",
     "description": "Ready to bring your mobile app idea to life? Let's discuss your project.",
-    "readyToConnect": "Ready to Connect",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
     "cta": {
       "title": "Ready to Start Your Project?",
       "description": "I specialize in creating high-quality Flutter applications that work seamlessly across platforms. Let's discuss how I can help bring your vision to life.",
-      "available": "Available for Projects",
       "sendMessage": "Send Message",
-      "downloadResume": "Download Resume",
-      "responseTime": "I typically respond within 24 hours"
+      "downloadResume": "Download Resume"
+    },
+    "form": {
+      "title": "Contact Me",
+      "description": "Fill out the form below and I'll get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Request sent successfully!",
+      "error": "Error sending request.",
+      "networkError": "Network error."
     }
   },
   "about": {
@@ -93,32 +104,62 @@
       "mobile": {
         "title": "Mobile App Development",
         "description": "Custom Flutter applications for iOS and Android platforms",
-        "features": ["Cross-platform development", "Native performance", "Custom UI/UX design", "App store optimization"]
+        "features": [
+          "Cross-platform development",
+          "Native performance",
+          "Custom UI/UX design",
+          "App store optimization"
+        ]
       },
       "web": {
         "title": "Web Development",
         "description": "Responsive web applications and progressive web apps using Flutter or React.js",
-        "features": ["Responsive design", "Progressive Web Apps", "Modern frameworks", "API integration"]
+        "features": [
+          "Responsive design",
+          "Progressive Web Apps",
+          "Modern frameworks",
+          "API integration"
+        ]
       },
       "ui": {
         "title": "UI/UX Design",
         "description": "Beautiful and intuitive user interface and experience design using Figma and Adobe XD",
-        "features": ["User research", "Wireframing", "Prototyping", "Design systems"]
+        "features": [
+          "User research",
+          "Wireframing",
+          "Prototyping",
+          "Design systems"
+        ]
       },
       "deployment": {
         "title": "App Store Deployment",
         "description": "Complete app store submission and optimization services",
-        "features": ["App store guidelines", "Submission process", "Asset preparation", "Store optimization"]
+        "features": [
+          "App store guidelines",
+          "Submission process",
+          "Asset preparation",
+          "Store optimization"
+        ]
       },
       "maintenance": {
         "title": "Maintenance & Support",
         "description": "Ongoing app maintenance, updates, and technical support",
-        "features": ["Bug fixes", "Performance optimization", "Feature updates", "Technical support"]
+        "features": [
+          "Bug fixes",
+          "Performance optimization",
+          "Feature updates",
+          "Technical support"
+        ]
       },
       "consulting": {
         "title": "Technical Consulting",
         "description": "Expert advice on mobile development strategy and architecture",
-        "features": ["Architecture planning", "Technology selection", "Code review", "Best practices"]
+        "features": [
+          "Architecture planning",
+          "Technology selection",
+          "Code review",
+          "Best practices"
+        ]
       }
     },
     "cta": {
@@ -392,22 +433,6 @@
     "mazij": {
       "title": "Mazij",
       "description": "Mazij is an application that includes the largest stores, whether they are regular shops, wholesale outlets, or factories. It simplifies the shopping process by offering a solution to the challenges of quickly and easily finding nearby stores with their ratings and prices."
-    }
-  },
-  "contact": {
-    "form": {
-      "title": "Contact Me",
-      "description": "Fill out the form below and I'll get back to you as soon as possible.",
-      "name": "Name",
-      "email": "Email", 
-      "phone": "Phone",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Request sent successfully!",
-      "error": "Error sending request.",
-      "networkError": "Network error."
     }
   },
   "pricing": {
