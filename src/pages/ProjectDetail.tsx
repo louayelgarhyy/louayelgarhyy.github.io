@@ -8,7 +8,7 @@ import { getProjectById } from '@/data/projects';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const project = getProjectById(projectId || '');
 
@@ -150,7 +150,7 @@ const ProjectDetail = () => {
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-card-foreground mb-4">{t('projectDetail.overview')}</h3>
               <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-                {project.longDescription || t(project.descriptionKey)}
+                {i18n.language === 'ar' ? t(project.descriptionKey) : (project.longDescription || t(project.descriptionKey))}
               </p>
             </CardContent>
           </Card>
@@ -163,7 +163,7 @@ const ProjectDetail = () => {
                 {project.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">{feature}</span>
+                    <span className="text-muted-foreground">{t(`projectFeatures.${feature}`, { defaultValue: feature })}</span>
                   </div>
                 ))}
               </div>
@@ -174,7 +174,7 @@ const ProjectDetail = () => {
         {/* Technologies */}
         <Card className="mt-12 bg-card-gradient border-border/50 shadow-elegant animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <CardContent className="p-8">
-            <h3 className="text-2xl font-bold text-card-foreground mb-6 text-center">Technologies Used</h3>
+            <h3 className="text-2xl font-bold text-card-foreground mb-6 text-center">{t('projectDetail.technologies')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {project.technologies.map((tech) => (
                 <Badge

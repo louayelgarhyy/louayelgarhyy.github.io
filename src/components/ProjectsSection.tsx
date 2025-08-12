@@ -92,7 +92,7 @@ const ProjectsSection = () => {
                   className={`group hover-lift bg-card border-border shadow-card hover:shadow-elegant transition-all duration-300 ${index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4 rtl:space-x-reverse">
+                    <div className="flex items-center space-x-4 rtl:space-x-reverse">
                       <div className="w-16 h-16 rounded-lg overflow-hidden bg-muted flex-shrink-0">
                         <img
                           src={project.image}
