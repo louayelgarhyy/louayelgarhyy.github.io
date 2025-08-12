@@ -46,14 +46,17 @@
   "contact": {
     "title": "Let's Work Together",
     "description": "Ready to bring your mobile app idea to life? Let's discuss your project.",
+    "readyToConnect": "Ready to Connect",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
     "cta": {
       "title": "Ready to Start Your Project?",
       "description": "I specialize in creating high-quality Flutter applications that work seamlessly across platforms. Let's discuss how I can help bring your vision to life.",
+      "available": "Available for Projects",
       "sendMessage": "Send Message",
-      "downloadResume": "Download Resume"
+      "downloadResume": "Download Resume",
+      "responseTime": "I typically respond within 24 hours"
     }
   },
   "about": {

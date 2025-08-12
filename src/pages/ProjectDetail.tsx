@@ -45,10 +45,10 @@ const ProjectDetail = () => {
       <div className="container mx-auto px-6 py-12">
         {/* Project Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-[1.2] py-4 px-2">
             {t(project.titleKey)}
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
             {t(project.descriptionKey)}
           </p>
 
