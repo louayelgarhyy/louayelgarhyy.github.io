@@ -69,10 +69,9 @@ export const projects: Project[] = [
       // downloads: "50K+"
     },
     screenshots: [
-      "/images/salam/logo/logo_salam.png",
-      "/images/salam/logo/logo.svg",
-      "/images/salam/logo/ic_logo_green_dark.svg",
-      "/images/salam/logo/ic_salam_icon.svg"
+      "/images/salam/frame1.png",
+      "/images/salam/frame2.png",
+      "/images/salam/frame3.png"
     ]
   },
   {

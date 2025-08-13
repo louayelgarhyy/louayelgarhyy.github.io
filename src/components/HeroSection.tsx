@@ -186,7 +186,7 @@ const HeroSection = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  onClick={scrollToContact}
+                  onClick={() => window.open('Louay ElGarhy CV.pdf', '_blank')}
                   className="border-border bg-background hover:bg-muted font-medium px-8 py-3"
                 >
                   {t('hero.downloadResume')}
