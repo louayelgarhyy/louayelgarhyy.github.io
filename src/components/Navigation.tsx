@@ -1,38 +1,62 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const Navigation = () => {
+const Navigation = memo(() => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          // Use a smaller threshold for more responsive transitions
+          const scrolled = window.scrollY > 5;
+          if (scrolled !== isScrolled) {
+            setIsScrolled(scrolled);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+    
+    // Use passive listener for better performance
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, [isScrolled]);
+
+  const scrollToSection = useCallback((id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Temporarily enable smooth scrolling for this scroll
+      document.documentElement.classList.add('smooth-scroll');
+      element.scrollIntoView({ behavior: 'smooth' });
+      
+      // Remove smooth scrolling class after animation
+      setTimeout(() => {
+        document.documentElement.classList.remove('smooth-scroll');
+      }, 1000);
+    }
+    setIsOpen(false);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
-  };
-
-  const navItems = [
+  const navItems = useMemo(() => [
     { label: 'Home', id: 'hero' },
     { label: 'About', id: 'about' },
     { label: 'Projects', id: 'projects' },
-    { label: 'Contact', id: 'contact' },
-  ];
+    { label: 'Contact', id: 'contact-form' },
+  ], []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'nav-blur shadow-md' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? 'nav-blur nav-shadow' : 'nav-transparent nav-no-shadow'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -148,6 +172,6 @@ const Navigation = () => {
       </div>
     </nav>
   );
-};
+});
 
 export default Navigation;

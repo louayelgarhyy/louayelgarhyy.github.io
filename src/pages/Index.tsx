@@ -10,7 +10,8 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import PricingSection from "@/components/PricingSection";
 import ContactFormSection from "@/components/ContactFormSection";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 // Animation variants
 const containerVariants = {
@@ -70,30 +71,38 @@ const staggerContainer = {
 const Index = () => {
   const [preselectedSubject, setPreselectedSubject] = useState<string | undefined>(undefined);
 
+  // Use custom hook to ensure page starts from the top
+  useScrollToTop();
+
   // Scroll to contact form and set subject
-  const handleServiceClick = (serviceLabel: string) => {
+  const handleServiceClick = useCallback((serviceLabel: string) => {
     setPreselectedSubject(serviceLabel);
-    setTimeout(() => {
-      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
-    }, 100); // allow state to propagate
-  };
+    // Use requestAnimationFrame for better timing
+    requestAnimationFrame(() => {
+      const element = document.getElementById('contact-form');
+      if (element) {
+        // Temporarily enable smooth scrolling for this scroll
+        document.documentElement.classList.add('smooth-scroll');
+        element.scrollIntoView({ behavior: 'smooth' });
+        
+        // Remove smooth scrolling class after animation
+        setTimeout(() => {
+          document.documentElement.classList.remove('smooth-scroll');
+        }, 1000);
+      }
+    });
+  }, []);
 
   return (
-    <motion.div 
-      className="min-h-screen bg-background"
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-    >
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+    <>
+      <Navigation />
+      <motion.div 
+        className="min-h-screen bg-background"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
       >
-        <Navigation />
-      </motion.div>
-      
-      <main>
+        <main>
         <motion.div
           variants={sectionVariants}
           initial="hidden"
@@ -148,23 +157,23 @@ const Index = () => {
           <TestimonialsSection />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
           <ContactSection />
-        </motion.div>
+        </motion.div> */}
         {/* Pricing Section */}
-        <motion.div
+        {/* <motion.div
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
           <PricingSection onServiceClick={handleServiceClick} />
-        </motion.div>
+        </motion.div> */}
         {/* New Contact Form Section */}
         <motion.div
           variants={sectionVariants}
@@ -185,6 +194,7 @@ const Index = () => {
         <Footer />
       </motion.div>
     </motion.div>
+    </>
   );
 };
 

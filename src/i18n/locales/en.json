@@ -75,12 +75,12 @@
     "description": "Passionate Flutter developer with a proven track record of creating exceptional mobile experiences",
     "story": {
       "title": "My Journey",
-      "paragraph1": "With over 5 years of experience in mobile development, I've dedicated my career to crafting beautiful, performant applications that users love. My journey began with native Android development, but I found my passion in Flutter's cross-platform capabilities.",
+      "paragraph1": "With over 4 years of experience in mobile development, I've dedicated my career to crafting beautiful, performant applications that users love. My journey began with native Android development, but I found my passion in Flutter's cross-platform capabilities.",
       "paragraph2": "Today, I specialize in creating scalable, maintainable mobile applications that solve real-world problems. I believe in writing clean code, following best practices, and staying up-to-date with the latest industry trends."
     },
     "highlights": {
       "experience": {
-        "title": "5+ Years Experience",
+        "title": "4+ Years Experience",
         "description": "Extensive experience in mobile development with Flutter and native platforms"
       },
       "mobile": {
@@ -99,6 +99,7 @@
   },
   "services": {
     "title": "Services",
+    "starting_from": "Starts from",
     "description": "Comprehensive mobile development services to bring your ideas to life",
     "items": {
       "mobile": {

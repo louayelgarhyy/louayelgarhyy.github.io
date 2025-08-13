@@ -152,11 +152,51 @@
   
   .nav-blur {
     @apply bg-white/90 backdrop-blur-lg border-b border-border/50;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .nav-transparent {
+    @apply bg-transparent;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
+  .nav-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-no-shadow {
+    box-shadow: none;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+}
 
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for fixed navigation */
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  /* Ensure page starts at top */
+  scroll-behavior: auto;
+}
+
+/* Prevent scroll restoration on page load */
+html {
+  scroll-behavior: auto;
+}
+
+/* Ensure smooth scrolling only for programmatic scrolls */
+html.smooth-scroll {
   scroll-behavior: smooth;
 }
 

@@ -98,7 +98,7 @@ const Footer = () => {
           {/* Bottom */}
           <div className="border-t border-border mt-8 pt-8 text-center">
             <p className="text-muted-foreground text-sm">
-              {t('footer.copyright')} {currentYear} {t('hero.name')}. {t('footer.rights') || 'All rights reserved. Built with React, TypeScript & Tailwind CSS.'}
+              {t('footer.copyright')} {currentYear} {t('hero.name')}.
             </p>
           </div>
         </div>

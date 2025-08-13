@@ -87,7 +87,7 @@ const ServicesSection = () => {
             ))}
           </div>
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="bg-card rounded-2xl shadow-card p-8 border border-border">
               <h3 className="text-2xl font-poppins font-semibold text-foreground mb-4">
                 {t('services.cta.title')}
@@ -99,7 +99,7 @@ const ServicesSection = () => {
                 {t('services.cta.button')}
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

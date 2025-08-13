@@ -12,7 +12,7 @@ const CountUp = ({ to, suffix = '' }: CountUpProps) => {
 
   useEffect(() => {
     const isLarge = to > 99;
-    const baseDuration = isLarge ? 2.5 : to <= 10 ? 1 : 1.5;
+    const baseDuration = isLarge ? 2.5 : to <= 10 ? 2 : 2.5;
     const incrementTime = 16; // ~60fps
     const totalIncrements = baseDuration * 1000 / incrementTime;
     const increment = to / totalIncrements;
@@ -41,6 +41,8 @@ const AboutSection = () => {
     { number: 4, suffix: '+', label: 'Years Experience', icon: Award },
     { number: 30, suffix: '+', label: 'Apps Published', icon: Smartphone },
     { number: 100, suffix: 'K+', label: 'Downloads', icon: Globe },
+    { number: 27, suffix: '+', label: t('about.highlights.clients.title'), icon: Users },
+
   ];
 
   const highlights = [
@@ -59,11 +61,11 @@ const AboutSection = () => {
       title: t('about.highlights.performance.title'),
       description: t('about.highlights.performance.description')
     },
-    // {
-    //   icon: Users,
-    //   title: t('about.highlights.clients.title'),
-    //   description: t('about.highlights.clients.description')
-    // }
+    {
+      icon: Users,
+      title: t('about.highlights.clients.title'),
+      description: t('about.highlights.clients.description')
+    }
   ];
 
   // Animation variants
@@ -128,7 +130,7 @@ const AboutSection = () => {
 
           {/* Stats */}
           <motion.div
-            className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
             variants={containerVariants}
           >
             {stats.map((stat, index) => (
@@ -227,8 +229,8 @@ const AboutSection = () => {
           </motion.div>
 
           {/* Additional Highlights */}
-          <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          {/* <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             variants={containerVariants}
           >
             {highlights.map((highlight, index) => (
@@ -256,7 +258,7 @@ const AboutSection = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">{highlight.description}</p>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
