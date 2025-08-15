@@ -3,9 +3,12 @@ import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { ArrowDown, Mail, Github, Linkedin } from 'lucide-react';
 import profilePicture from '@/assets/profile-picture.jpg';
+import { usePopup } from "@/components/ui/PopupContext"; // Adjust path if needed
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const { openPopup } = usePopup();
+
 
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -40,10 +43,10 @@ const HeroSection = () => {
   };
 
   const profileVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       scale: 0.8,
-      y: 50 
+      y: 50
     },
     visible: {
       opacity: 1,
@@ -92,18 +95,28 @@ const HeroSection = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative bg-hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <motion.div 
+        <motion.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {/* Profile Picture */}
-          <motion.div 
+          <motion.div
             className="mb-8 flex justify-center"
             variants={profileVariants}
+            onClick={() => {
+              openPopup(
+                <img
+                  src={profilePicture}
+                  alt={`Louay ElGarhy`}
+                  className="rounded-full max-w-full max-h-[80vh] object-contain rounded-lg"
+
+                />
+              );
+            }}
           >
-            <motion.div 
+            <motion.div
               className="relative"
               animate={floatingAnimation}
             >
@@ -113,8 +126,9 @@ const HeroSection = () => {
                 className="w-32 h-32 rounded-full object-cover shadow-xl sm:w-40 sm:h-40"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
+
               />
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 rounded-full "
                 animate={{
                   scale: [1, 1.1, 1],
@@ -130,28 +144,28 @@ const HeroSection = () => {
           </motion.div>
 
           <div className="space-y-6">
-            <motion.p 
+            <motion.p
               className="text-lg text-muted-foreground font-medium"
               variants={itemVariants}
             >
               {t('hero.greeting')}
             </motion.p>
-            
-            <motion.h1 
+
+            <motion.h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight"
               variants={itemVariants}
             >
               {t('hero.name')}
             </motion.h1>
-            
-            <motion.h2 
+
+            <motion.h2
               className="text-xl sm:text-2xl text-gradient font-semibold"
               variants={itemVariants}
             >
               {t('hero.title')}
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
               variants={itemVariants}
             >
@@ -159,7 +173,7 @@ const HeroSection = () => {
             </motion.p>
 
             {/* CTAs */}
-            <motion.div 
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
               variants={itemVariants}
             >
@@ -168,8 +182,8 @@ const HeroSection = () => {
                 whileHover="hover"
                 whileTap="tap"
               >
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   onClick={scrollToProjects}
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3"
                 >
@@ -177,14 +191,14 @@ const HeroSection = () => {
                   {t('hero.viewWork')}
                 </Button>
               </motion.div>
-              
+
               <motion.div
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
               >
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   size="lg"
                   onClick={() => window.open('Louay ElGarhy CV.pdf', '_blank')}
                   className="border-border bg-background hover:bg-muted font-medium px-8 py-3"
@@ -195,7 +209,7 @@ const HeroSection = () => {
             </motion.div>
 
             {/* Social Links */}
-            <motion.div 
+            <motion.div
               className="flex justify-center space-x-6 pt-8 rtl:space-x-reverse"
               variants={itemVariants}
             >
@@ -222,7 +236,7 @@ const HeroSection = () => {
                 <Linkedin className="w-6 h-6" />
               </motion.a>
               <motion.a
-                href="mailto:louay.elgarhy@example.com"
+                href="mailto:louayelgarhy@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
                 variants={socialVariants}
@@ -236,10 +250,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        onClick={scrollToProjects} 
       >
         <ArrowDown className="w-6 h-6 text-muted-foreground" />
       </motion.div>

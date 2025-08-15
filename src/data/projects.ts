@@ -40,7 +40,7 @@ export const projects: Project[] = [
     featured: true,
     appStoreUrl: "https://apps.apple.com/app/6720723099",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar",
-    websiteUrl: "https://bazar.coms.sa",
+    websiteUrl: "https://bazar.com.sa",
     date: "2024-12",
     features: ["Multi-vendor marketplace", "Social commerce", "Real-time chat", "Payment gateway integration", "Push notifications", "Admin dashboard"],
     stats: {
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     featured: false,
     appStoreUrl: "https://apps.apple.com/app/6723871374?platform=iphone",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar",
-    websiteUrl: "https://bazar.coms.sa",
+    websiteUrl: "https://bazar.com.sa",
     date: "2024-12",
     features: ["Market management", "Analytics dashboard", "Post scheduling", "Multi-platform integration", "Vendor tools", "Sales tracking"],
     stats: {

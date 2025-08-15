@@ -12,7 +12,7 @@ const getServices = (t: any) => [
   t('services.items.consulting.title') +' - FREE',
 ];
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzgChN2RG4IWk0QKel8z9fGdRUPqd0lBi2C9s2qbVHA-hqAcCu_g76XwEs4oMO1wL_-/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzKXVX1ow9UGV4155BBh7_8qaBGin8RXBnMsr4Mksh0Vv0XKTZhydGNAq3UMZl3X6x4/exec';
 
 const ContactFormSection = ({ preselectedSubject }: { preselectedSubject?: string }) => {
   const { t } = useTranslation();

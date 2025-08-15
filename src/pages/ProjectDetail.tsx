@@ -5,10 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Smartphone, Play, Star, Download, Users } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 import { getProjectById } from '@/data/projects';
+import { usePopup } from "@/components/ui/PopupContext"; // Adjust path if needed
+
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const { t, i18n } = useTranslation();
+  const { openPopup } = usePopup();
 
   const project = getProjectById(projectId || '');
 
@@ -122,6 +125,41 @@ const ProjectDetail = () => {
         {/* Screenshots Section */}
         {project.screenshots && project.screenshots.length > 0 && (
           <div className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
+              {t('projectDetail.screenshots')}
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {project.screenshots.map((screenshot, index) => (
+                <Card
+                  key={index}
+                  className="bg-card-gradient border-border/50 shadow-elegant hover:shadow-glow-primary transition-all duration-300 animate-fade-in overflow-hidden"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-2 cursor-pointer"
+                    onClick={() =>
+                      openPopup(
+                        <img
+                          src={screenshot}
+                          alt={`${t(project.titleKey)} Screenshot ${index + 1}`}
+                          className="max-w-full max-h-[80vh] object-contain rounded-lg"
+
+                        />
+                      )
+                    }
+                  >
+                    <img
+                      src={screenshot}
+                      alt={`${t(project.titleKey)} Screenshot ${index + 1}`}
+                      className="w-full object-cover rounded-lg"
+                    />
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
+        {/* {project.screenshots && project.screenshots.length > 0 && (
+          <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8 text-foreground">{t('projectDetail.screenshots')}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {project.screenshots.map((screenshot, index) => (
@@ -141,7 +179,7 @@ const ProjectDetail = () => {
               ))}
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Details Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

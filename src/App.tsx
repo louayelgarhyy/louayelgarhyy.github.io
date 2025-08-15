@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 import { useScrollToTop } from "@/hooks/use-scroll-to-top";
+import { PopupProvider } from "@/components/ui/PopupContext"; // ⬅️ import your popup provider
 
 const queryClient = new QueryClient();
 
@@ -16,19 +17,18 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Use the custom hook logic for route changes
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
     }
-    
+
     window.scrollTo(0, 0);
-    
+
     const timeoutId = setTimeout(() => {
       if (window.scrollY > 0) {
         window.scrollTo(0, 0);
       }
     }, 50);
-    
+
     return () => clearTimeout(timeoutId);
   }, [pathname]);
 
@@ -40,15 +40,17 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/project/:projectId" element={<ProjectDetail />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      {/* Wrap everything inside PopupProvider */}
+      <PopupProvider>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/project/:projectId" element={<ProjectDetail />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </PopupProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
