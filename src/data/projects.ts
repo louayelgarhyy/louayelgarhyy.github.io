@@ -93,7 +93,6 @@ export const projects: Project[] = [
     },
     screenshots: [
       "/images/bazar_market/appstore.png",
-      "/images/bazar_market/splash.mov",
       "/images/bazar_market/bazarlogo.png"
     ]
   },
@@ -160,12 +159,13 @@ export const projects: Project[] = [
     date: "2024-09",
     features: ["Auction platform", "Classified ads", "Reward system", "Real-time bidding", "User engagement", "Social features"],
     stats: {
-      downloads: "45K+"
+      // downloads: "45K+"
     },
     screenshots: [
       "/images/sarfha/sarfha 1.png",
       "/images/sarfha/sarfha2.png",
-      "/images/sarfha/sarfha 33.png",
+      "/images/sarfha/sarfha 3.png",
+
     ]
   },
   {
@@ -203,20 +203,19 @@ export const projects: Project[] = [
     category: "beauty",
     featured: false,
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.heaven_vally",
+    appStoreUrl: "https://apps.apple.com/ae/app/id6737987479",
     date: "2024-08",
     features: ["Beauty services", "Salon booking", "Product shopping", "Expert consultations", "Appointment management", "Payment processing"],
     stats: {
       // downloads: "35K+"
     },
     screenshots: [
-      "/images/heaven_valley/frame1.png",
-      "/images/heaven_valley/frame2.png",
-      "/images/heaven_valley/frame3.png",
-      "/images/heaven_valley/frame4.png",
-      "/images/heaven_valley/frame5.png",
-      "/images/heaven_valley/frame6.png",
-      "/images/heaven_valley/frame7.png",
-      "/images/heaven_valley/frame8.png"
+      "/images/heaven_valley/frame1.jpg",
+      "/images/heaven_valley/frame2.jpg",
+      "/images/heaven_valley/frame3.jpg",
+      "/images/heaven_valley/frame4.jpg",
+      "/images/heaven_valley/Frame 3.jpg",
+      "/images/heaven_valley/Screenshot 2025-05-21 155817.png"
     ]
   },
   {
@@ -274,7 +273,7 @@ export const projects: Project[] = [
     category: "deals",
     featured: false,
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.dieayaplus.market&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/dieaya-plus-business/id6502800191",
+    appStoreUrl: "https://apps.apple.com/ae/app/id6633412575",
     websiteUrl: "https://dieaya-plus.com/",
     date: "2024-07",
     features: ["Business dashboard", "Offer management", "Customer analytics", "Sales tracking", "Inventory management", "Promotion tools"],
@@ -296,9 +295,7 @@ export const projects: Project[] = [
     image: "/images/maak/logo.png",
     category: "healthcare",
     featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.maak.health&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/maak/id6502800192",
-    websiteUrl: "https://maak-health.com/",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.maak.sa&hl=ar",
     date: "2024-06",
     features: ["Telemedicine", "Appointment booking", "Prescription management", "Video consultations", "Health records", "AI health assistant"],
     stats: {
@@ -321,8 +318,7 @@ export const projects: Project[] = [
     category: "beauty",
     featured: false,
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.glamgo.apps.android&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/glamgo/id6502800193",
-    websiteUrl: "https://glamgo.app/",
+    appStoreUrl: "https://apps.apple.com/us/app/id6449788574",
     date: "2024-05",
     features: ["On-demand beauty services", "Home services", "Professional network", "Real-time tracking", "Service booking", "Reviews and ratings"],
     stats: {
@@ -349,8 +345,7 @@ export const projects: Project[] = [
     category: "beauty",
     featured: false,
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.glamgo.apps.provider&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/glamgo-provider/id6502800194",
-    websiteUrl: "https://glamgo.app/provider",
+    appStoreUrl: "https://apps.apple.com/us/app/glamgo-provider/id6503233331",
     date: "2024-05",
     features: ["Provider dashboard", "Booking management", "Earnings tracking", "Schedule management", "Client communication", "Portfolio showcase"],
     stats: {
@@ -397,9 +392,8 @@ export const projects: Project[] = [
     image: "/images/rose/logo.png",
     category: "beauty",
     featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.rose.beauty&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/rose-beauty/id6502800196",
-    websiteUrl: "https://rosebeauty.sa/",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.roz.sa&hl=ar",
+    appStoreUrl: "https://apps.apple.com/kw/app/roz/id6745151466?platform=iphone",
     date: "2024-03",
     features: ["Luxury beauty products", "AI recommendations", "Skincare analysis", "Expert consultations", "Beauty routines", "Premium brands"],
     stats: {
@@ -421,9 +415,8 @@ export const projects: Project[] = [
     image: "/images/dalilwijhitak/logo.png",
     category: "travel",
     featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.dalilwijhitak.app&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/dalil-wijhitak/id6502800197",
-    websiteUrl: "https://dalilwijhitak.com/",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.dalilwejhtak&hl=ar",
+    appStoreUrl: "https://apps.apple.com/kw/app/id6738397663?platform=iphone",
     date: "2024-02",
     features: ["Travel guide", "Destination discovery", "Local insights", "Cultural experiences", "AR navigation", "Trip planning"],
     stats: {
@@ -447,9 +440,6 @@ export const projects: Project[] = [
     image: "/images/akareya/logo.png",
     category: "real_estate",
     featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.akareya.app&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/akareya/id6502800198",
-    websiteUrl: "https://akareya.sa/",
     date: "2024-01",
     features: ["Property marketplace", "Virtual tours", "Smart matching", "Investment analysis", "Mortgage calculator", "Legal support"],
     stats: {
@@ -457,8 +447,6 @@ export const projects: Project[] = [
     },
     screenshots: [
       "/images/akareya/login.png",
-      "/images/akareya/logo.png",
-      "/images/akareya/logoSvg.svg"
     ]
   },
   {
@@ -476,7 +464,7 @@ export const projects: Project[] = [
     date: "2025-01",
     features: ["Escrow‑style payment withholding until deal completion", "In‑app messaging between buyer and seller", "Order management and status overview", "Real‑time transaction tracking and updates", "Secure and trusted environment for trading", "Regular updates and performance enhancements", "Transparent data policy with no third‑party sharing"],
     stats: {
-      downloads: "15K+"
+      // downloads: "15K+"
     },
     screenshots: [
       "/images/damin/frame1.png",
@@ -523,7 +511,7 @@ export const projects: Project[] = [
     date: "2025-03",
     features: ["Extensive Property Listings: Explore apartments, villas, offices, retail stores, and more across Saudi Arabia with detailed descriptions.", "Advanced Search Filters: Narrow down options by city, price, property type, and amenities.", "High‑Quality Listings: View clear photos and comprehensive property information to make informed choices.", "Secure In‑App Messaging: Contact property owners directly within the app in a trusted and private environment.", "Transparent Rental Process: Navigate listings and transactions with clarity and confidence built into the experience.", "Cross‑Platform Availability: Designed for Android 5.0+ devices, ensuring wide compatibility.", "Regular Updates & Support: Latest versions bring improvements and bug fixes (e.g. version 1.0.9 released March 11, 2025)."],
     stats: {
-      downloads: "8K+"
+      // downloads: "8K+"
     },
     screenshots: [
       "/images/noot_owner/frame1.png",
