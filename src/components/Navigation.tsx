@@ -11,7 +11,7 @@ const Navigation = memo(() => {
 
   useEffect(() => {
     let ticking = false;
-    
+
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -25,7 +25,7 @@ const Navigation = memo(() => {
         ticking = true;
       }
     };
-    
+
     // Use passive listener for better performance
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -37,7 +37,7 @@ const Navigation = memo(() => {
       // Temporarily enable smooth scrolling for this scroll
       document.documentElement.classList.add('smooth-scroll');
       element.scrollIntoView({ behavior: 'smooth' });
-      
+
       // Remove smooth scrolling class after animation
       setTimeout(() => {
         document.documentElement.classList.remove('smooth-scroll');
@@ -55,9 +55,8 @@ const Navigation = memo(() => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'nav-blur nav-shadow' : 'nav-transparent nav-no-shadow'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'nav-blur nav-shadow' : 'nav-transparent nav-no-shadow'
+        }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -115,6 +114,8 @@ const Navigation = memo(() => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
+            <LanguageSwitcher />   {/* 👈 always visible outside the menu */}
+
             <Button
               variant="ghost"
               size="sm"

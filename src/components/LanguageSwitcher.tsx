@@ -24,8 +24,11 @@ const LanguageSwitcher = () => {
           <Globe className="h-4 w-4 mr-2 rtl:mr-0 rtl:ml-2" />
           {i18n.language === 'ar' ? 'العربية' : 'English'}
         </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      </DropdownMenuTrigger> 
+      <DropdownMenuContent
+        align={i18n.language === "ar" ? "start" : "end"}   // 👈 RTL vs LTR
+        sideOffset={5}                                    // 👈 little spacing
+      >
         <DropdownMenuItem onClick={() => changeLanguage('en')}>
           🇺🇸 English
         </DropdownMenuItem>

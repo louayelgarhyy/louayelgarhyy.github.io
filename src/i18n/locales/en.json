@@ -110,6 +110,11 @@
           "Native performance",
           "Custom UI/UX design",
           "App store optimization"
+        ],
+        "for_service": [
+          "Authentication(Login,Register,Logout)",
+          "2 Main Features",
+          "15 Screen"
         ]
       },
       "web": {
@@ -120,6 +125,11 @@
           "Progressive Web Apps",
           "Modern frameworks",
           "API integration"
+        ],
+        "for_service": [
+          "Authentication(Login,Register,Logout)",
+          "2 Main Features",
+          "5 Screen"
         ]
       },
       "ui": {
@@ -130,12 +140,22 @@
           "Wireframing",
           "Prototyping",
           "Design systems"
+        ],
+        "for_service": [
+          "Custom UI/UX design",
+          "Figma Or Adoge XD",
+          "15 Screen",
+          "Modern frameworks"
         ]
       },
       "deployment": {
-        "title": "App Store Deployment",
-        "description": "Complete app store submission and optimization services",
+        "title": "Backend and Deployment",
+        "description": "Complete backend development, deployment, and app store submission services",
         "features": [
+          "Backend architecture design",
+          "API development and integration",
+          "Database setup and optimization",
+          "Server configuration and deployment",
           "App store guidelines",
           "Submission process",
           "Asset preparation",

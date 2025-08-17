@@ -6,7 +6,7 @@ const getServices = (t: any) => [
   {
     icon: Smartphone,
     title: t('services.items.mobile.title'),
-    price: 9.99,
+    price: 199.99,
     label: `${t('services.items.mobile.title')} - $9.99`,
   },
   {
@@ -35,9 +35,9 @@ const getServices = (t: any) => [
   },
   {
     icon: Users,
-    title: t('services.items.consulting.title'),
-    price: 39.99,
-    label: `${t('services.items.consulting.title')} - $39.99`,
+    title: `${t('services.items.consulting.title')} FREE`,
+    price: 0,
+    label: `${t('services.items.consulting.title')} FREE`,
   },
 ];
 
