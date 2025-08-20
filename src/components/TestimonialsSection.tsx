@@ -72,16 +72,25 @@ const TestimonialsSection = () => {
                   <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.satisfaction')}</div>
                 </div> */}
                 <div className="text-center">
-                  <div className="text-3xl font-poppins font-bold text-primary mb-1">30+</div>
+                  <div className="text-3xl font-poppins font-bold text-primary mb-1">+4</div>
+                  <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.years_epxerience')}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-poppins font-bold text-primary mb-1">+30</div>
                   <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.projects')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-poppins font-bold text-primary mb-1">27+</div>
-                  <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.clients')}</div>
+                  <div className="text-3xl font-poppins font-bold text-primary mb-1">+100K</div>
+                  <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.downloads')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-poppins font-bold text-primary mb-1">4.9</div>
                   <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.rating')}</div>
+                </div>
+
+                <div className="text-center">
+                  <div className="text-3xl font-poppins font-bold text-primary mb-1">27+</div>
+                  <div className="text-muted-foreground font-open-sans text-sm">{t('testimonials.stats.clients')}</div>
                 </div>
               </div>
             </div>

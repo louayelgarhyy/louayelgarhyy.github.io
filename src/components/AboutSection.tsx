@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 type CountUpProps = {
   to: number;
   suffix?: string;
+  prefix?: string;
 };
 
-const CountUp = ({ to, suffix = '' }: CountUpProps) => {
+const CountUp = ({ to, suffix = '', prefix = '' }: CountUpProps) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -32,16 +33,16 @@ const CountUp = ({ to, suffix = '' }: CountUpProps) => {
     return () => clearInterval(counter);
   }, [to]);
 
-  return <span>{count.toLocaleString()}{suffix}</span>;
+  return <span>{prefix}{count.toLocaleString()}{suffix}</span>;
 };
 const AboutSection = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { number: 4, suffix: '+', label: 'Years Experience', icon: Award },
-    { number: 30, suffix: '+', label: 'Apps Published', icon: Smartphone },
-    { number: 100, suffix: 'K+', label: 'Downloads', icon: Globe },
-    { number: 27, suffix: '+', label: t('about.highlights.clients.title'), icon: Users },
+    { number: 4, prefix: '+', suffix: '', label: t('about.highlights.years_epxerience'), icon: Award },
+    { number: 30, prefix: '+', suffix: '', label: t('about.highlights.app_published'), icon: Smartphone },
+    { number: 100, prefix: '+', suffix: 'K', label: t('about.highlights.downloads'), icon: Globe },
+    { number: 27, prefix: '+', suffix: '', label: t('about.highlights.clients.title'), icon: Users },
 
   ];
 
@@ -157,7 +158,7 @@ const AboutSection = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: index * 0.1 + 0.3, duration: 0.5 }}
                 >
-                  <CountUp to={stat.number} suffix={stat.suffix} />
+                  <CountUp prefix={stat.prefix} to={stat.number} suffix={stat.suffix} />
                 </motion.div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </motion.div>

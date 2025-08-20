@@ -79,6 +79,9 @@
       "paragraph2": "Today, I specialize in creating scalable, maintainable mobile applications that solve real-world problems. I believe in writing clean code, following best practices, and staying up-to-date with the latest industry trends."
     },
     "highlights": {
+      "downloads": "Downloads",
+      "app_published": "App Published",
+      "years_epxerience": "Years Experience",
       "experience": {
         "title": "4+ Years Experience",
         "description": "Extensive experience in mobile development with Flutter and native platforms"
@@ -222,7 +225,10 @@
       "satisfaction": "Client Satisfaction",
       "projects": "Completed Projects",
       "clients": "Happy Clients",
-      "rating": "Average Rating"
+      "rating": "Average Rating",
+      "downloads": "Downloads",
+      "app_published": "App Published",
+      "years_epxerience": "Years Experience"
     }
   },
   "projectDetail": {
