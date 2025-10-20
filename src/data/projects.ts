@@ -38,9 +38,9 @@ export const projects: Project[] = [
     image: "/images/bazar/logo.png",
     category: "ecommerce",
     featured: true,
-    appStoreUrl: "https://apps.apple.com/app/6720723099",
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar",
-    websiteUrl: "https://bazar.com.sa",
+    // appStoreUrl: "https://apps.apple.com/app/6720723099",
+    // playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.user.bazar",
+    // websiteUrl: "https://bazar.com.sa",
     date: "2024-12",
     features: ["Multi-vendor marketplace", "Social commerce", "Real-time chat", "Payment gateway integration", "Push notifications", "Admin dashboard"],
     stats: {
@@ -50,7 +50,10 @@ export const projects: Project[] = [
       "/images/bazar/frame1.jpg",
       "/images/bazar/Frame 4.jpg",
       "/images/bazar/Frame 5.jpg",
-      "/images/bazar/Frame 6.jpg"
+      "/images/bazar/Frame 6.jpg",
+      "/images/bazar/frame7.jpg",
+      "/images/bazar/Frame 3.jpg",
+      "/images/bazar/Frame 30.jpg",
     ]
   },
   {
@@ -83,9 +86,9 @@ export const projects: Project[] = [
     image: "/images/bazar_market/bazarlogo.png",
     category: "ecommerce",
     featured: false,
-    appStoreUrl: "https://apps.apple.com/app/6723871374?platform=iphone",
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar",
-    websiteUrl: "https://bazar.com.sa",
+    // appStoreUrl: "https://apps.apple.com/app/6723871374?platform=iphone",
+    // playStoreUrl: "https://play.google.com/store/apps/details?id=com.market.bazar",
+    // websiteUrl: "https://bazar.com.sa",
     date: "2024-12",
     features: ["Market management", "Analytics dashboard", "Post scheduling", "Multi-platform integration", "Vendor tools", "Sales tracking"],
     stats: {
@@ -118,6 +121,57 @@ export const projects: Project[] = [
       "/images/daffa/frame3.png",
       "/images/daffa/frame4.png",
       "/images/daffa/frame5.png"
+    ]
+  },
+    {
+    id: "13",
+    titleKey: "projectsList.glamgo.title",
+    descriptionKey: "projectsList.glamgo.description",
+    longDescription: "An on-demand beauty services platform that connects customers with professional beauty specialists for both home and salon services. This app revolutionizes the beauty industry by providing convenient access to professional beauty services at users' preferred locations.",
+    technologies: ["Flutter", "Firebase", "Laravel", "Real-time Tracking"],
+    image: "/images/glamgo/logo.png",
+    category: "beauty",
+    featured: false,
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.glamgo.apps.android&hl=en",
+    appStoreUrl: "https://apps.apple.com/us/app/id6449788574",
+    date: "2024-05",
+    features: ["On-demand beauty services", "Home services", "Professional network", "Real-time tracking", "Service booking", "Reviews and ratings"],
+    stats: {
+      // downloads: "55K+"
+    },
+    screenshots: [
+      "/images/glamgo/frame1.png",
+      "/images/glamgo/frame2.png",
+      "/images/glamgo/frame3.png",
+      "/images/glamgo/frame4.png",
+      "/images/glamgo/frame5.png",
+      "/images/glamgo/frame6.png",
+      "/images/glamgo/frame7.png",
+      "/images/glamgo/frame8.png"
+    ]
+  },
+  {
+    id: "14",
+    titleKey: "projectsList.glamgoProvider.title",
+    descriptionKey: "projectsList.glamgoProvider.description",
+    longDescription: "A professional application designed specifically for beauty service providers to efficiently manage their bookings, track earnings, and grow their beauty business. This app provides comprehensive tools for service providers to streamline their operations and maximize their business potential.",
+    technologies: ["Flutter", "Firebase", "Laravel", "Calendar Integration"],
+    image: "/images/glamgo_provider/logo.png",
+    category: "beauty",
+    featured: false,
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.glamgo.apps.provider&hl=en",
+    appStoreUrl: "https://apps.apple.com/us/app/glamgo-provider/id6503233331",
+    date: "2024-05",
+    features: ["Provider dashboard", "Booking management", "Earnings tracking", "Schedule management", "Client communication", "Portfolio showcase"],
+    stats: {
+      // downloads: "12K+"
+    },
+    screenshots: [
+      "/images/glamgo_provider/frame1.png",
+      "/images/glamgo_provider/frame2.png",
+      "/images/glamgo_provider/frame3.png",
+      "/images/glamgo_provider/frame4.png",
+      "/images/glamgo_provider/frame5.png"
     ]
   },
   {
@@ -153,8 +207,8 @@ export const projects: Project[] = [
     image: "/images/sarfha/logo.png",
     category: "marketplace",
     featured: false,
-    appStoreUrl: "https://apps.apple.com/kw/app/6544787418",
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.sarfha&hl=ar",
+    // appStoreUrl: "https://apps.apple.com/kw/app/6544787418",
+    // playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.sarfha&hl=ar",
     websiteUrl: null,
     date: "2024-09",
     features: ["Auction platform", "Classified ads", "Reward system", "Real-time bidding", "User engagement", "Social features"],
@@ -308,57 +362,7 @@ export const projects: Project[] = [
       "/images/maak/frame4.png"
     ]
   },
-  {
-    id: "13",
-    titleKey: "projectsList.glamgo.title",
-    descriptionKey: "projectsList.glamgo.description",
-    longDescription: "An on-demand beauty services platform that connects customers with professional beauty specialists for both home and salon services. This app revolutionizes the beauty industry by providing convenient access to professional beauty services at users' preferred locations.",
-    technologies: ["Flutter", "Firebase", "Laravel", "Real-time Tracking"],
-    image: "/images/glamgo/logo.png",
-    category: "beauty",
-    featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.glamgo.apps.android&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/id6449788574",
-    date: "2024-05",
-    features: ["On-demand beauty services", "Home services", "Professional network", "Real-time tracking", "Service booking", "Reviews and ratings"],
-    stats: {
-      // downloads: "55K+"
-    },
-    screenshots: [
-      "/images/glamgo/frame1.png",
-      "/images/glamgo/frame2.png",
-      "/images/glamgo/frame3.png",
-      "/images/glamgo/frame4.png",
-      "/images/glamgo/frame5.png",
-      "/images/glamgo/frame6.png",
-      "/images/glamgo/frame7.png",
-      "/images/glamgo/frame8.png"
-    ]
-  },
-  {
-    id: "14",
-    titleKey: "projectsList.glamgoProvider.title",
-    descriptionKey: "projectsList.glamgoProvider.description",
-    longDescription: "A professional application designed specifically for beauty service providers to efficiently manage their bookings, track earnings, and grow their beauty business. This app provides comprehensive tools for service providers to streamline their operations and maximize their business potential.",
-    technologies: ["Flutter", "Firebase", "Laravel", "Calendar Integration"],
-    image: "/images/glamgo_provider/logo.png",
-    category: "beauty",
-    featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.glamgo.apps.provider&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/glamgo-provider/id6503233331",
-    date: "2024-05",
-    features: ["Provider dashboard", "Booking management", "Earnings tracking", "Schedule management", "Client communication", "Portfolio showcase"],
-    stats: {
-      // downloads: "12K+"
-    },
-    screenshots: [
-      "/images/glamgo_provider/frame1.png",
-      "/images/glamgo_provider/frame2.png",
-      "/images/glamgo_provider/frame3.png",
-      "/images/glamgo_provider/frame4.png",
-      "/images/glamgo_provider/frame5.png"
-    ]
-  },
+
   {
     id: "15",
     titleKey: "projectsList.tissueWishen.title",
@@ -368,8 +372,8 @@ export const projects: Project[] = [
     image: "/images/manadil/logo.png",
     category: "marketplace",
     featured: false,
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.tissue&hl=en",
-    appStoreUrl: "https://apps.apple.com/us/app/id6741335020",
+    // playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.tissue&hl=en",
+    // appStoreUrl: "https://apps.apple.com/us/app/id6741335020",
     // websiteUrl: "https://tissuewishen.com/",
     date: "2024-04",
     features: ["Premium tissue products", "Subscription service", "Bulk ordering", "Business solutions", "Delivery tracking", "Eco-friendly options"],
